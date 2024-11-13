@@ -675,10 +675,6 @@ video {
   bottom: 0px;
 }
 
-.\!bottom-16{
-  bottom: 4rem !important;
-}
-
 .\!bottom-4{
   bottom: 1rem !important;
 }
@@ -1194,10 +1190,6 @@ video {
 
 .h-48{
   height: 12rem;
-}
-
-.h-60{
-  height: 15rem;
 }
 
 .h-72{
