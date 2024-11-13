@@ -839,6 +839,10 @@ video {
   order: 2;
 }
 
+.col-span-8{
+  grid-column: span 8 / span 8;
+}
+
 .float-start{
   float: inline-start;
 }
@@ -1186,12 +1190,12 @@ video {
   height: 35px;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .h-\[50px\]{
   height: 50px;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .\!w-auto{
@@ -1258,16 +1262,24 @@ video {
   width: 20rem;
 }
 
+.w-96{
+  width: 24rem;
+}
+
 .w-\[10px\]{
   width: 10px;
+}
+
+.w-\[140px\]{
+  width: 140px;
 }
 
 .w-\[45px\]{
   width: 45px;
 }
 
-.w-\[85\%\]{
-  width: 85%;
+.w-\[90\%\]{
+  width: 90%;
 }
 
 .w-\[this-is\\\\\]{
@@ -1295,12 +1307,8 @@ video {
   width: max-content;
 }
 
-.w-\[156px\]{
-  width: 156px;
-}
-
-.w-\[140px\]{
-  width: 140px;
+.w-\[26rem\]{
+  width: 26rem;
 }
 
 .min-w-36{
@@ -1325,6 +1333,10 @@ video {
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-5xl{
+  max-width: 64rem;
 }
 
 .flex-auto{
@@ -1945,6 +1957,14 @@ video {
 
 .gap-7{
   gap: 1.75rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
+.gap-12{
+  gap: 3rem;
 }
 
 .gap-x-10{
@@ -2838,6 +2858,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-28{
+  padding: 7rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2986,10 +3010,6 @@ video {
 
 .pr-2{
   padding-right: 0.5rem;
-}
-
-.ps-10{
-  padding-inline-start: 2.5rem;
 }
 
 .ps-3{
@@ -3903,6 +3923,16 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
+.\*\:object-contain > *{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.\*\:object-cover > *{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .\*\:p-2 > *{
   padding: 0.5rem;
 }
@@ -4459,13 +4489,13 @@ video {
   .max-sm\:mt-10{
     margin-top: 2.5rem;
   }
-
-  .max-sm\:pt-10{
-    padding-top: 2.5rem;
-  }
 }
 
 @media (min-width: 640px){
+  .sm\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
   .sm\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
@@ -4491,6 +4521,10 @@ video {
     width: 24rem;
   }
 
+  .sm\:w-\[26rem\]{
+    width: 26rem;
+  }
+
   .sm\:max-w-3xl{
     max-width: 48rem;
   }
@@ -4501,6 +4535,10 @@ video {
 
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-12{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .sm\:gap-4{
@@ -4923,12 +4961,8 @@ video {
     width: 40rem;
   }
 
-  .xl\:w-\[156px\]{
-    width: 156px;
-  }
-
-  .xl\:w-\[140px\]{
-    width: 140px;
+  .xl\:w-\[60\%\]{
+    width: 60%;
   }
 
   .xl\:max-w-4xl{
