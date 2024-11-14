@@ -38,25 +38,32 @@
 <body>
   <!-- header start -->
   <section class="fixed w-full top-0 z-[999]">
-    <div class="border shadow-lg shadow-black-50 bg-white z-[999] p-2">
-      <div class="flex items-center justify-between md:mx-5 md:px-2 lg:mx-8 lg:px-5">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 bg-black z-[999] p-2 py-4 sm:py-7">
+      <div class="flex items-center justify-between">
         <div class="flex z-20">
-          <a href="./index.html" class="logo h-16 md:h-20 inline-block w-28">
-            <img class="size-full" src="./assets/img/wpo11logo.png" alt="Logo" />
+          <a href="./index.html" class="logo max-h-5 sm:max-h-8 inline-block w-auto">
+            <img class="h-full" src="./assets/img/logo_wpo.png" alt="Logo" />
           </a>
         </div>
         <div class="md:flex md:gap-14 hidden w-3/4 justify-end items-center">
-          <a class="text-theme1 font-medium" href="./about.html">About</a>
-          <a class="text-theme1 font-medium" href="./blog.html">Blog</a>
-          <a class="text-theme1 font-medium" href="####">Download App</a>
-          <a class="text-theme1 font-medium" href="howtoplay.html">How to play</a>
-          <a class="text-theme1 font-medium" href="./contactus.html">Contact us</a>
+          <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+            href="./about.html">About</a>
+          <!-- <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+            href="./blog.html">Blog</a> -->
+          <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+            href="####">Download App</a>
+          <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+            href="howtoplay.html">How to play</a>
+          <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+            href="./contactus.html">Contact us</a>
         </div>
-        <div class="flex items-center md:hidden text-theme1">
+        <div class="flex items-center md:hidden text-white">
           <button onclick="toggleSidebar()" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="25px"
-              width="25px">
-              <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32z"></path>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true"
+              height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
             </svg>
           </button>
         </div>
@@ -72,31 +79,31 @@
   <!-- Sidebar -->
   <div class="">
     <div id="sidebar"
-      class="fixed top-0 right-0 h-full w-64 bg-gradient-to-t from-theme1 to-theme2 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[1000]">
-      <div class="flex justify-end p-4">
-        <!-- <div class="h-16">
-            <img class="size-full" src="./assets/img/wpo11logo.png" alt="">
-          </div> -->
-        <button onclick="toggleSidebar()" class="p-2 text-lg">
+      class="fixed top-0 right-0 h-full w-full sm:w-64 bg-black text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[1000]">
+      <div class="flex justify-between items-start p-4 py-6">
+        <div class="h-5">
+          <img class="h-full" src="./assets/img/logo_wpo.png" alt="">
+        </div>
+        <button onclick="toggleSidebar()" class="leading-[60%] text-lg">
           ✕
         </button>
       </div>
-      <div class="px-4 py-2">
-        <ul>
+      <div class="px-4 mt-5 py-2">
+        <ul class="flex flex-col gap-y-8">
           <li class="py-2">
-            <a class="text-white font-medium" href="./about.html">About</a>
+            <a class="text-white font-semibold text-lg font-oswald" href="./about.html">About</a>
+          </li>
+          <!-- <li class="py-2">
+            <a class="text-white font-semibold text-lg font-oswald" href="./blog.html">Blog</a>
+          </li> -->
+          <li class="py-2">
+            <a class="text-white font-semibold text-lg font-oswald" href="#">Download App</a>
           </li>
           <li class="py-2">
-            <a class="text-white font-medium" href="./blog.html">Blog</a>
+            <a class="text-white font-semibold text-lg font-oswald" href="howtoplay.html">How to play</a>
           </li>
           <li class="py-2">
-            <a class="text-white font-medium" href="#">Download App</a>
-          </li>
-          <li class="py-2">
-            <a class="text-white font-medium" href="howtoplay.html">How to play</a>
-          </li>
-          <li class="py-2">
-            <a class="text-white font-medium" href="./contactus.html">Contact us</a>
+            <a class="text-white font-semibold text-lg font-oswald" href="./contactus.html">Contact us</a>
           </li>
         </ul>
       </div>
@@ -237,7 +244,7 @@
         <div class="w-full md:w-1/2 lg:w-1/3">
           <div class="flex flex-col w-full px-3">
             <div class="font-bold w-36 text-base lg:text-lg pb-4">
-              <img class="size-full" src="./assets/img/wpo11Foter.png" alt>
+              <img class="size-full" src="./assets/img/logo_wpo.png" alt>
             </div>
             <div>
               WPO11 attempts to provide best services to users by
@@ -304,16 +311,6 @@
                 </path>
               </svg>
               <span>About Us</span>
-            </a>
-            <a href="./blog.html"
-              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
-                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-                </path>
-              </svg>
-              <span>Blog</span>
             </a>
             <a href="./terms&Conditions.html"
               class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
@@ -412,8 +409,9 @@
               </svg>
               <div>
                 <div>Address</div>
-                <div>Office No. 504, Omgurudev Plaza, 26 Mechanic Nagar, Scheme No. 54, Indore, Indore, Madhya Pradesh,
-                  India, 452010 </div>
+                <div>Office No. 504, Omgurudev Plaza, 26 Mechanic Nagar,
+                  Scheme No. 54, Indore, Indore, Madhya Pradesh, India, 452010
+                </div>
               </div>
             </a>
             <a href="./contact.html"
@@ -450,12 +448,14 @@
       </div>
       <div
         class="w-full flex flex-wrap items-center gap-x-10 gap-y-5 justify-center pt-8 lg:pt-14 lg:mt-8 border-t border-white/20 text-xs lg:text-sm">
-        <div class="w-auto opacity-80">©2019 -2024 Rocky11 Games Private Limited . All Rights Reserved
+        <div class="w-auto opacity-80">©2019 -2024 Rocky11 Games Private
+          Limited . All Rights Reserved
           |</div>
 
       </div>
     </div>
   </footer>
+  <!-- download-btn start -->
   <!-- download-btn start -->
   <!-- <div class="flex items-center gap-3 fixed bottom-0 z-[1000] left-1/2 -translate-x-1/2 mb-5">
     <a href="####" class="inline-block w-32 sm:w-44 md:w-48 lg:w-60 animate-bounce">

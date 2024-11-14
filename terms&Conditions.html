@@ -38,25 +38,32 @@
 <body>
   <!-- header start -->
   <section class="fixed w-full top-0 z-[999]">
-    <div class="border shadow-lg shadow-black-50 bg-white z-[999] p-2">
-      <div class="flex items-center justify-between md:mx-5 md:px-2 lg:mx-8 lg:px-5">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 bg-black z-[999] p-2 py-4 sm:py-7">
+      <div class="flex items-center justify-between">
         <div class="flex z-20">
-          <a href="./index.html" class="logo h-16 md:h-20 inline-block w-28">
-            <img class="size-full" src="./assets/img/wpo11logo.png" alt="Logo" />
+          <a href="./index.html" class="logo max-h-5 sm:max-h-8 inline-block w-auto">
+            <img class="h-full" src="./assets/img/logo_wpo.png" alt="Logo" />
           </a>
         </div>
         <div class="md:flex md:gap-14 hidden w-3/4 justify-end items-center">
-          <a class="text-theme1 font-medium" href="./about.html">About</a>
-          <a class="text-theme1 font-medium" href="./blog.html">Blog</a>
-          <a class="text-theme1 font-medium" href="####">Download App</a>
-          <a class="text-theme1 font-medium" href="howtoplay.html">How to play</a>
-          <a class="text-theme1 font-medium" href="./contactus.html">Contact us</a>
+          <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+            href="./about.html">About</a>
+          <!-- <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+          href="./blog.html">Blog</a> -->
+          <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+            href="####">Download App</a>
+          <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+            href="howtoplay.html">How to play</a>
+          <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
+            href="./contactus.html">Contact us</a>
         </div>
-        <div class="flex items-center md:hidden text-theme1">
+        <div class="flex items-center md:hidden text-white">
           <button onclick="toggleSidebar()" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="25px"
-              width="25px">
-              <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32z"></path>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true"
+              height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
             </svg>
           </button>
         </div>
@@ -72,31 +79,31 @@
   <!-- Sidebar -->
   <div class="">
     <div id="sidebar"
-      class="fixed top-0 right-0 h-full w-64 bg-gradient-to-t from-theme1 to-theme2 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[1000]">
-      <div class="flex justify-end p-4">
-        <div class="h-16">
-            <img class="size-full" src="./assets/img/logo_wpo.png" alt="">
-          </div>
-        <button onclick="toggleSidebar()" class="p-2 text-lg">
+      class="fixed top-0 right-0 h-full w-full sm:w-64 bg-black text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[1000]">
+      <div class="flex justify-between items-start p-4 py-6">
+        <div class="h-5">
+          <img class="h-full" src="./assets/img/logo_wpo.png" alt="">
+        </div>
+        <button onclick="toggleSidebar()" class="leading-[60%] text-lg">
           ✕
         </button>
       </div>
-      <div class="px-4 py-2">
-        <ul>
+      <div class="px-4 mt-5 py-2">
+        <ul class="flex flex-col gap-y-8">
           <li class="py-2">
-            <a class="text-white font-medium" href="./about.html">About</a>
+            <a class="text-white font-semibold text-lg font-oswald" href="./about.html">About</a>
+          </li>
+          <!-- <li class="py-2">
+          <a class="text-white font-semibold text-lg font-oswald" href="./blog.html">Blog</a>
+        </li> -->
+          <li class="py-2">
+            <a class="text-white font-semibold text-lg font-oswald" href="#">Download App</a>
           </li>
           <li class="py-2">
-            <a class="text-white font-medium" href="./blog.html">Blog</a>
+            <a class="text-white font-semibold text-lg font-oswald" href="howtoplay.html">How to play</a>
           </li>
           <li class="py-2">
-            <a class="text-white font-medium" href="#">Download App</a>
-          </li>
-          <li class="py-2">
-            <a class="text-white font-medium" href="howtoplay.html">How to play</a>
-          </li>
-          <li class="py-2">
-            <a class="text-white font-medium" href="./contactus.html">Contact us</a>
+            <a class="text-white font-semibold text-lg font-oswald" href="./contactus.html">Contact us</a>
           </li>
         </ul>
       </div>
@@ -135,16 +142,15 @@
 
   <!-- about section start  -->
   <section class="md:pt-[160px] pt-[88px] font-open-sans">
-    <div
-      class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative bg-white pb-10">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative bg-white pb-10">
       <div class="md:pb-[50px] pb-5 text-[40px] font-semibold font-oswald">
         Terms & Conditions
       </div>
       <div class="w-full text-sm md:text-base text-black  font-normal flex flex-col gap-y-4 
       !leading-[2rem] font-open-sans">
         <div><span class="">WPO11</span> is the New Emerging brand Limited Liability Partnership.
-          <span class="">WPO11</span>, offers cricket based, online fantasy contest. <span
-            class="">WPO11</span> as used herein shall be construed as a collective reference to
+          <span class="">WPO11</span>, offers cricket based, online fantasy contest. <span class="">WPO11</span> as used
+          herein shall be construed as a collective reference to
           <span class="">WPO11</span> App on Android Version.
         </div>
         <div>If you access the Service for making deposits or playing Contest from a jurisdiction where Contest are not
@@ -230,7 +236,8 @@
           <li>You represent that you are not on the UN Sanctions List or work for a company that is on the UN Sanctions
             list.</li>
         </ul>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">User Account Creation & Operation</div>
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">User Account Creation & Operation
+        </div>
         <div>To use our Services, you will need to register with us on the Portal. By completing the online registration
           process on the Portal, you confirm your acceptance of the Terms. By registering on our Portal, you agree to
           receive promotional messages relating to Tournaments & Bonus through SMS, Email and Push Notifications. You
@@ -278,7 +285,8 @@
           deduction. We neither advise you nor shall in any manner be responsible for your individual tax matters.</div>
         <div>We reserve the right to verify your PAN from time to time and to cancel any prize if your PAN be found
           inconsistent in our verification process.</div>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">User Account validation and personal information
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">User Account validation and
+          personal information
           verification</div>
         <div><span class="">WPO11</span> may from time to time attempt to validate its players' user
           accounts. These attempts may be made via a phone call or via email. In the event that we are not able to get
@@ -297,7 +305,8 @@
         <div>The Privacy Policy of our Portal form a part of the Terms. All personal information which is of such nature
           that requires protection from unauthorized dissemination shall be dealt with in the manner provided in the
           Privacy Policy of the Portal.</div>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Anti-Cheating and Anti-Collusion</div>
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Anti-Cheating and Anti-Collusion
+        </div>
         <div>You undertake that you yourself will play in Fantasy Cricket in which you have registered/joined and not
           use any form of external assistance to play. You shall not add unauthorized components, create or use cheats,
           exploits, bots, hacks or any other third-party software designed to modify the Websites or use any third-party
@@ -405,8 +414,8 @@
           restrictions, by notifying us of your withdrawal request.</div>
         <div>Once notified, post verification of the withdrawal request, we may disburse the specified amount by
           electronic transfer.</div>
-        <div>In case of non-availability of your bank account details, the <span
-            class="">WPO11</span> may require you to provide those details to process the refund/
+        <div>In case of non-availability of your bank account details, the <span class="">WPO11</span> may require you
+          to provide those details to process the refund/
           withdrawal. We also reserve the right to disburse the amount on the financial instrument used to Add Cash to
           your user account.</div>
         <div>We will attempt our best to process your withdrawals in a timely manner, but there could be delays due to
@@ -424,9 +433,9 @@
 
         <div>You may face Service disruptions, including, but not limited to disconnection or communication
           interferences due to issues in the internet infrastructure used for providing or accessing the Services or due
-          to issues with the hardware and software used by you. You understand that <span
-            class="">WPO11</span> has no control over these factors. <span
-            class="">WPO11</span> shall not be responsible for any interruption in Services and you
+          to issues with the hardware and software used by you. You understand that <span class="">WPO11</span> has no
+          control over these factors. <span class="">WPO11</span> shall not be responsible for any interruption in
+          Services and you
           take full responsibility for any risk of loss due to Service interruptions for any such reason.</div>
         <div>You understand, acknowledge and agree to the fact that if you are unable to play in any contest due to any
           error or omission directly attributable to <span class="">WPO11</span>, including
@@ -440,8 +449,8 @@
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Content</div>
         <div>All content and material on the Portal including but not limited to information, images, marks, logos,
           designs, pictures, graphics, text content, hyperlinks, multimedia clips, animation, contest and software
-          (collectively referred to as "Content"), whether or not belonging to <span
-            class="">WPO11</span>, are protected by applicable intellectual property laws.
+          (collectively referred to as "Content"), whether or not belonging to <span class="">WPO11</span>, are
+          protected by applicable intellectual property laws.
           Additionally, all chat content, messages, images, recommendations, emails, images sent by any user can be
           logged/recorded by us and shall form part of Content and <span class="">WPO11</span> is
           free to use this material in any manner whatsoever.</div>
@@ -454,7 +463,8 @@
           subject to terms and conditions applicable to such third party website or app. We neither control nor are
           responsible for content on such third-party websites or apps. The fact of a link existing on our Portal to a
           third-party website or app is not an endorsement of that website or app by us.</div>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">License Agreement & Intellectual Property</div>
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">License Agreement & Intellectual
+          Property</div>
         <div>All Content on the Website and Android Application shall be utilized only for the purpose of availing
           Services in conformity with the Terms. You acknowledge that all ownership rights and all copyright and other
           intellectual property rights in the Content are owned by <span class="">WPO11</span> or
@@ -498,12 +508,13 @@
           <li> Demand damages for breach and take appropriate civil action to recover such damages; and/or</li>
           <li>Initiate prosecution for violations that amount to offences in law.</li>
           <li>Additionally, in the event of committing material breach hereof, we reserve the right to bar you from
-            future registration on the Website and Android Application. The decision of <span
-              class="">WPO11</span> on the action to be taken as a consequence of breach shall be
+            future registration on the Website and Android Application. The decision of <span class="">WPO11</span> on
+            the action to be taken as a consequence of breach shall be
             final and binding on you. Any action taken by <span class="">WPO11</span> shall be
             without prejudice to our other rights and remedies available in law or equity.</li>
         </ul>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Complaints, Grievances & Disputes</div>
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Complaints, Grievances & Disputes
+        </div>
         <div>If you have a complaint, you should in the first instance contact the customer support team at <a
             href="javascript:;" class="text-theme2 font-bold">wpo11fantasy@gmail.com</a> or write to us following the
           procedure given in the respective Contact Us section on the relevant Website and on Android Application.
@@ -522,8 +533,8 @@
           of those Services will be governed by the Terms as well as any such supplementary terms that those Services
           may be subject to.</div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Limitation of liability</div>
-        <div>In addition to specific references to limitation of liability of <span
-            class="">WPO11</span> elsewhere in the Terms, under no circumstances (including, without
+        <div>In addition to specific references to limitation of liability of <span class="">WPO11</span> elsewhere in
+          the Terms, under no circumstances (including, without
           limitation, in contract, negligence or other tort), <span class="">WPO11</span> shall be
           liable for any injury, loss, claim, loss of data, loss of income, loss of profit or loss of opportunity, loss
           of or damage to property, general damages or any direct, indirect, special, incidental, consequential,
@@ -552,8 +563,8 @@
           operation or availability of any facility on the website.</div>
         <div>Additionally, Play <span class="">WPO11</span> does not promise or ensure that you will
           be able to access your user account or obtain Services whenever you want. It is entirely possible that you may
-          not be able to access your user account or the Services provided by <span
-            class="">WPO11</span> at times or for extended periods of time due to, but not limited
+          not be able to access your user account or the Services provided by <span class="">WPO11</span> at times or
+          for extended periods of time due to, but not limited
           to, system maintenance and updates. <span class="">WPO11</span> disclaims responsibility
           and liability for any harm resulting from cancellation of any Contest organized by it. If you are a cash
           player on the Portal, you acknowledge and agree that you will not be entitled to any refund in case of any
@@ -590,55 +601,56 @@
           of your user account by any other person accessing the Services using your username or password, whether or
           not with your authorization.</div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Usage of WPO11</div>
-        <div>Any person ("User") accessing <span class="">WPO11</span> (On <span
-            class="">WPO11</span> platform') for participating in the various contests and contest
+        <div>Any person ("User") accessing <span class="">WPO11</span> (On <span class="">WPO11</span> platform') for
+          participating in the various contests and contest
           (including fantasy contest), available on <span class="">WPO11</span> platform
           ("Contest(s)") (' <span class="">WPO11</span> Services') shall be bound by these Terms and
           Conditions, and all other rules, regulations and terms of use referred to herein or provided by <span
             class="">WPO11</span> in relation to any <span class="">WPO11</span>
           Services.</div>
         <div><span class="">WPO11</span> shall be entitled to modify these Terms and Conditions,
-          rules, regulations and terms of use referred to herein or provided by <span
-            class="">WPO11</span> in relation to any <span class="">WPO11</span>
-          Services, at any time, by posting the same on <span class="">WPO11</span>. Use of <span
-            class="">WPO11</span> constitutes the User's acceptance of such Terms and Conditions,
-          rules, regulations and terms of use referred to herein or provided by <span
-            class="">WPO11</span> in relation to any <span class="">WPO11</span>
+          rules, regulations and terms of use referred to herein or provided by <span class="">WPO11</span> in relation
+          to any <span class="">WPO11</span>
+          Services, at any time, by posting the same on <span class="">WPO11</span>. Use of <span class="">WPO11</span>
+          constitutes the User's acceptance of such Terms and Conditions,
+          rules, regulations and terms of use referred to herein or provided by <span class="">WPO11</span> in relation
+          to any <span class="">WPO11</span>
           Services, as may be amended from time to time. <span class="">WPO11</span> may, at its
           sole discretion, also notify the User of any change or modification in these Terms and Conditions, rules,
-          regulations and terms of use referred to herein or provided by <span
-            class="">WPO11</span>, by way of sending an email to the User's registered email address
+          regulations and terms of use referred to herein or provided by <span class="">WPO11</span>, by way of sending
+          an email to the User's registered email address
           or posting notifications in the User accounts. The User may then exercise the options provided in such an
           email or notification to indicate non-acceptance of the modified Terms and Conditions, rules, regulations and
           terms of use referred to herein or provided by <span class="">WPO11</span>. If such
           options are not exercised by the User within the time frame prescribed in the email or notification, the User
           will be deemed to have accepted the modified Terms and Conditions, rules, regulations and terms of use
           referred to herein or provided by <span class="">WPO11</span>.</div>
-        <div>Certain <span class="">WPO11</span> Services being provided on <span
-            class="">WPO11</span> may be subject to additional rules and regulations set down in
+        <div>Certain <span class="">WPO11</span> Services being provided on <span class="">WPO11</span> may be subject
+          to additional rules and regulations set down in
           that respect. To the extent that these Terms and Conditions are inconsistent with the additional conditions
           set down, the additional conditions shall prevail.</div>
-        <div>Restrict, suspend, or terminate any User's access to all or any part of <span
-            class="">WPO11</span> or <span class="">WPO11</span> Platform
-          Services; Change, suspend, or discontinue all or any part of the <span
-            class="">WPO11</span> Platform Services; Reject, move, or remove any material that may
-          be submitted by a User; Move or remove any content that is available on <span
-            class="">WPO11</span> Platform; Deactivate or delete a User's account and all related
+        <div>Restrict, suspend, or terminate any User's access to all or any part of <span class="">WPO11</span> or
+          <span class="">WPO11</span> Platform
+          Services; Change, suspend, or discontinue all or any part of the <span class="">WPO11</span> Platform
+          Services; Reject, move, or remove any material that may
+          be submitted by a User; Move or remove any content that is available on <span class="">WPO11</span> Platform;
+          Deactivate or delete a User's account and all related
           information and files on the account; Establish general practices and limits concerning use of <span
             class="">WPO11</span> Platform; Offer discounts to its users in form it deems fit ("Cash
-          Bonus"). All such discounts shall be credited in a separate account called as Bonus Account.</div>
+          Bonus"). All such discounts shall be credited in a separate account called as Bonus Account.
+        </div>
         <div>Revise or make additions and/or deletions to the roster of players available for selection in a Contest on
           account of revisions to the roster of players involved in the relevant Sports Event; Assign its rights and
           liabilities to all User accounts hereunder to any entity (post such assignment intimation of such assignment
           shall be sent to all Users to their registered email ids)In the event any User breaches, or <span
             class="">WPO11</span> reasonably believes that such User has breached these Terms and
-          Conditions, or has illegally or improperly used <span class="">WPO11</span> or the <span
-            class="">WPO11</span> Services, <span class="">WPO11</span> may, at
+          Conditions, or has illegally or improperly used <span class="">WPO11</span> or the <span class="">WPO11</span>
+          Services, <span class="">WPO11</span> may, at
           its sole and absolute discretion, and without any notice to the User, restrict, suspend or terminate such
-          User's access to all or any part of <span class="">WPO11</span> Contests or the <span
-            class="">WPO11</span> Platform, deactivate or delete the User's account and all related
-          information on the account, delete any content posted by the User on <span
-            class="">WPO11</span> and further, take technical and legal steps as it deems necessary.
+          User's access to all or any part of <span class="">WPO11</span> Contests or the <span class="">WPO11</span>
+          Platform, deactivate or delete the User's account and all related
+          information on the account, delete any content posted by the User on <span class="">WPO11</span> and further,
+          take technical and legal steps as it deems necessary.
         </div>
         <div>If <span class="">WPO11</span> charges its Users a platform fee in respect of any <span
             class="">WPO11</span> Services, <span class="">WPO11</span> shall,
@@ -650,14 +662,14 @@
         </div>
         <div>Users consent to receiving communications such as announcements, administrative messages and advertisements
           from <span class="">WPO11</span> or any of its partners, licensors or associates.</div>
-        <div><span class="">WPO11</span> includes a combination of content created by <span
-            class="">WPO11</span>, its partners, affiliates, licensors, associates and/or Users. The
+        <div><span class="">WPO11</span> includes a combination of content created by <span class="">WPO11</span>, its
+          partners, affiliates, licensors, associates and/or Users. The
           intellectual property rights ("Intellectual Property Rights") in all software underlying <span
             class="">WPO11</span> and the <span class="">WPO11</span> Platform
           and material published on <span class="">WPO11</span>, including (but not limited to)
           contest, Contests, software, advertisements, written content, photographs, graphics, images, illustrations,
-          marks, logos, audio or video clippings and Flash animation, is owned by <span
-            class="">WPO11</span>, its partners, licensors and/or associates. Users may not modify,
+          marks, logos, audio or video clippings and Flash animation, is owned by <span class="">WPO11</span>, its
+          partners, licensors and/or associates. Users may not modify,
           publish, transmit, participate in the transfer or sale of, reproduce, create derivative works of, distribute,
           publicly perform, publicly display, or in any way exploit any of the materials or content on <span
             class="">WPO11</span> either in whole or in part without express written license from
@@ -675,8 +687,8 @@
           affiliates and assigns against all costs, damages, loss and harm including towards litigation costs and
           counsel fees, in respect of any third party claims that may be initiated including for infringement of
           Intellectual Property Rights arising out of such display or use of the names, logos, marks, labels,
-          trademarks, copyrights or intellectual and proprietary rights on <span
-            class="">WPO11</span>, by such User or through the User's commissions or omissions.
+          trademarks, copyrights or intellectual and proprietary rights on <span class="">WPO11</span>, by such User or
+          through the User's commissions or omissions.
         </div>
         <div>Users hereby grant to <span class="">WPO11</span> and its affiliates, partners,
           licensors and associates a worldwide, irrevocable, royalty-free, non-exclusive, sub-licensable license to use,
@@ -692,7 +704,8 @@
           these names, logos, marks, labels, trademarks, copyrights or intellectual and proprietary rights must be
           directly addressed to the respective parties under notice to <span class="">WPO11</span>.
         </div>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Third Party Sites, Services and Products</div>
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Third Party Sites, Services and
+          Products</div>
         <div><span class="">WPO11</span> may contain links to other Internet sites owned and
           operated by third parties. Users' use of each of those sites is subject to the conditions, if any, posted by
           the sites. <span class="">WPO11</span> does not exercise control over any Internet sites
@@ -709,12 +722,12 @@
           liable for any loss or damage of any sort incurred as a result of any such transactions/offers with third
           parties. Any questions, complaints, or claims related to any third party product or service should be directed
           to the appropriate vendor.</div>
-        <div><span class="">WPO11</span> contains content that is created by <span
-            class="">WPO11</span> as well as content provided by third parties. <span
-            class="">WPO11</span> does not guarantee the accuracy, integrity, quality of the content
+        <div><span class="">WPO11</span> contains content that is created by <span class="">WPO11</span> as well as
+          content provided by third parties. <span class="">WPO11</span> does not guarantee the accuracy, integrity,
+          quality of the content
           provided by third parties and such content may not relied upon by the Users in utilizing the <span
-            class="">WPO11</span> Services provided on <span
-            class="">WPO11</span> including while participating in any of the contests hosted on
+            class="">WPO11</span> Services provided on <span class="">WPO11</span> including while participating in any
+          of the contests hosted on
           <span class="">WPO11</span>.
         </div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Privacy Policy</div>
@@ -737,14 +750,14 @@
           update and keep updated their registration information. A User shall not register or operate more than one
           User account with <span class="">WPO11</span>. Users agree to ensure that they can receive
           all communication from <span class="">WPO11</span> by marking e-mails or sending SMSs from
-          <span class="">WPO11</span> as part of their "safe senders" list. <span
-            class="">WPO11</span> shall not be held liable if any e-mail/SMS remains unread by a
+          <span class="">WPO11</span> as part of their "safe senders" list. <span class="">WPO11</span> shall not be
+          held liable if any e-mail/SMS remains unread by a
           User as a result of such e-mail getting delivered to the User's junk or spam folder.
         </div>
         <div>Any password issued by <span class="">WPO11</span> to a User may not be revealed to
           anyone else. Users may not use anyone else's password. Users are responsible for maintaining the
-          confidentiality of their accounts and passwords. Users agree to immediately notify <span
-            class="">WPO11</span> of any unauthorized use of their passwords or accounts or any
+          confidentiality of their accounts and passwords. Users agree to immediately notify <span class="">WPO11</span>
+          of any unauthorized use of their passwords or accounts or any
           other breach of security. Users agree to exit/log-out of their accounts at the end of each session. <span
             class="">WPO11</span> shall not be responsible for any loss or damage that may result if
           the User fails to comply with these requirements. Users agree not to use cheats, exploits, automation,
@@ -752,25 +765,23 @@
             class="">WPO11</span> Services and/or <span class="">WPO11</span>
           experience or assist in such activity. Users agree not to copy, modify, rent, lease, loan, sell, assign,
           distribute, reverse engineer, grant a security interest in, or otherwise transfer any right to the technology
-          or software underlying <span class="">WPO11</span> or <span
-            class="">WPO11</span>’s Services.</div>
+          or software underlying <span class="">WPO11</span> or <span class="">WPO11</span>’s Services.</div>
         <div>Users agree that without <span class="">WPO11</span>'s express written consent, they
-          shall not modify or cause to be modified any files or software that are part of <span
-            class="">WPO11</span>'s Services.
+          shall not modify or cause to be modified any files or software that are part of <span class="">WPO11</span>'s
+          Services.
           Users agree not to disrupt, overburden, or aid or assist in the disruption or overburdening of (a) any
-          computer or server used to offer or support <span class="">WPO11</span> or the <span
-            class="">WPO11</span>’s Services (each a "Server"); or (2) the enjoyment of <span
-            class="">WPO11</span> Services by any other User or person.</div>
+          computer or server used to offer or support <span class="">WPO11</span> or the <span class="">WPO11</span>’s
+          Services (each a "Server"); or (2) the enjoyment of <span class="">WPO11</span> Services by any other User or
+          person.</div>
         <div>Users agree not to institute, assist or become involved in any type of attack, including without limitation
-          to distribution of a virus, denial of service, or other attempts to disrupt <span
-            class="">WPO11</span> Services or any other person's use or enjoyment of <span
-            class="">WPO11</span> Services.</div>
+          to distribution of a virus, denial of service, or other attempts to disrupt <span class="">WPO11</span>
+          Services or any other person's use or enjoyment of <span class="">WPO11</span> Services.</div>
         <div>Users shall not attempt to gain unauthorized access to the User accounts, Servers or networks connected to
           <span class="">WPO11</span> Services by any means other than the User interface provided
           by <span class="">WPO11</span>, including but not limited to, by circumventing or
           modifying, attempting to circumvent or modify, or encouraging or assisting any other person to circumvent or
-          modify, any security, technology, device, or software that underlies or is part of <span
-            class="">WPO11</span> Services.
+          modify, any security, technology, device, or software that underlies or is part of <span class="">WPO11</span>
+          Services.
         </div>
         <div>Without limiting the foregoing, Users agree not to use <span class="">WPO11</span> for
           any of the following:</div>
@@ -802,13 +813,13 @@
           is obscene, indecent, abusive or that might subject <span class="">WPO11</span> to public
           disparagement or scorn, <span class="">WPO11</span> reserves the right, without prior
           notice to the User, to change such username and intimate the User or delete such username and posts from <span
-            class="">WPO11</span>, deny such User access to <span
-            class="">WPO11</span>, or any combination of these options.</div>
+            class="">WPO11</span>, deny such User access to <span class="">WPO11</span>, or any combination of these
+          options.</div>
         <div>Unauthorized access to <span class="">WPO11</span> is a breach of these Terms and
-          Conditions, and a violation of the law. Users agree not to access <span
-            class="">WPO11</span> by any means other than through the interface that is provided by
-          <span class="">WPO11</span> for use in accessing <span
-            class="">WPO11</span>. Users agree not to use any automated means, including, without
+          Conditions, and a violation of the law. Users agree not to access <span class="">WPO11</span> by any means
+          other than through the interface that is provided by
+          <span class="">WPO11</span> for use in accessing <span class="">WPO11</span>. Users agree not to use any
+          automated means, including, without
           limitation, agents, robots, scripts, or spiders, to access, monitor, or copy any part of our sites, except
           those automated means that we have approved in advance and in writing.
         </div>
@@ -821,10 +832,9 @@
           concerned contest.</div>
         <div>Persons below the age of eighteen (18) years are not allowed to participate on any of the contests, contest
           (by whatever name called) on the <span class="">WPO11</span> Platform. The Users will have
-          to disclose their real age at the time of getting access into the <span
-            class="">WPO11</span> Platform. <span class="">WPO11</span> may not
-          be held responsible for any content contributed by Users on the <span
-            class="">WPO11</span>.</div>
+          to disclose their real age at the time of getting access into the <span class="">WPO11</span> Platform. <span
+            class="">WPO11</span> may not
+          be held responsible for any content contributed by Users on the <span class="">WPO11</span>.</div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Conditions of Participation</div>
         <div>By entering a Contest, user agrees to be bound by these Terms and the decisions of <span
             class="">WPO11</span>. Subject to the terms and conditions stipulated herein below, the
@@ -848,8 +858,8 @@
           unsolicited emails to users, sending bulk emails to <span class="">WPO11</span> Users,
           sending unwarranted email content either to selected Users or in bulk); or Abusing the Website in any way
           (‘unparliamentary language, slangs or disrespectful words’ are some of the examples of Abuse) It is clarified
-          that in case a User is found to be in violation of this policy, <span
-            class="">WPO11</span> reserves its right to initiate appropriate Civil/Criminal remedies
+          that in case a User is found to be in violation of this policy, <span class="">WPO11</span> reserves its right
+          to initiate appropriate Civil/Criminal remedies
           as it may be advised other than forfeiture and/or recovery of prize money if any.</div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Registration for a contest</div>
         <div>In order to register for the Contest(s), Participants are required to accurately provide the following
@@ -872,7 +882,8 @@
         <div>Once the Participants have entered the above information, and clicked on the "register" tab, and such
           Participants are above the age of 18 years, they are sent an email confirming their registration and
           containing their login information. </div>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Contest(s), Participation and Prizes</div>
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Contest(s), Participation and
+          Prizes</div>
         <div>As part of its services, <span class="">WPO11</span> may make available the contest(s)
           on the <span class="">WPO11</span> platform. Currently only, Fantasy Cricket Contest is
           available on <span class="">WPO11</span> platform: and Individual users wishing to
@@ -921,8 +932,8 @@
           shall be eligible to win a pre-designated prize which is disbursed out of prize money pool, as stated on the
           relevant Contest(s) page.</div>
         <div>A Participant may create different Teams for participation in Contest(s) in relation to a Sport Event
-          across the <span class="">WPO11</span> Services. However, unless <span
-            class="">WPO11</span> specifies otherwise in relation to any Contest ("Multiple Entry
+          across the <span class="">WPO11</span> Services. However, unless <span class="">WPO11</span> specifies
+          otherwise in relation to any Contest ("Multiple Entry
           Contest"), Participants acknowledge and agree that they may enter only one Team in any Contest offered in
           relation to a Sport Event. In case of Multiple Entry Contest(s), a Participant may enter more than one Team in
           a single Multiple Entry Contest upto 11 teams. In addition, it is expressly clarified that <span
@@ -941,12 +952,12 @@
           event, contest prize money shall be equally divided amongst all participants and the amount shall be deposited
           in the <span class="">WPO11</span> winning account of all participants .</div>
         <div>In Starting Lineup Feature : Purpose of indicating a player's inclusion in final starting lineup is only to
-          provide information and assist a user in selecting his/her team on <span
-            class="">WPO11</span>. While indicating a Player's inclusion in starting lineup is given
+          provide information and assist a user in selecting his/her team on <span class="">WPO11</span>. While
+          indicating a Player's inclusion in starting lineup is given
           by <span class="">WPO11</span> on the basis of information/data received through feed
           providers, publicly available information. Users are advised to do a thorough research of their own from
-          official sources and/or other available sources of information. <span
-            class="">WPO11</span>, shall not take any liability, if a player earlier indicated as
+          official sources and/or other available sources of information. <span class="">WPO11</span>, shall not take
+          any liability, if a player earlier indicated as
           'Playing' does not play or start for any reason whatsoever.</div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Contest Formats</div>
         <div>Currently two formats of contest(s) are made available on <span class="">WPO11</span>
@@ -999,8 +1010,8 @@
           will initiate an automatic refund of the amount deposited. Such refund shall be processed after the expiry of
           the deadline for filling of participants for such Private Contest.</div>
         <div>It is clarified that the participation of Invited Users in any Private contest is subject to the
-          pre-specified number of Participants for that Private contest, and <span
-            class="">WPO11</span> shall not be liable to any person for the inability of any Invited
+          pre-specified number of Participants for that Private contest, and <span class="">WPO11</span> shall not be
+          liable to any person for the inability of any Invited
           User to participate in any Private contest due to any cause whatsoever, including without limitation due to a
           hardware or technical malfunction or lack of eligibility of such Invited User to participate in the
           Contest(s).</div>
@@ -1016,8 +1027,8 @@
         <div><span class="">WPO11</span> may on receipt of information bar a person from
           participation and/or withdrawing winning amounts if such person is found to be one with insider knowledge of
           participating teams in any given contests/match, organizing boards, leagues etc.</div>
-        <div>Only those Participants who have successfully registered on the <span
-            class="">WPO11</span> as well as registered prior to each match in accordance with the
+        <div>Only those Participants who have successfully registered on the <span class="">WPO11</span> as well as
+          registered prior to each match in accordance with the
           procedure outlined above shall be eligible to participate in the Contest and win prizes.</div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Payment Terms</div>
         <div>In respect of any transactions entered into on the <span class="">WPO11</span>
@@ -1069,10 +1080,10 @@
           gratuitously issue Cash Bonus to the User for the purpose of participation in any Contest(s) and no User shall
           be permitted to transfer or request the transfer of any amount in to the Cash Bonus. The usage of any Cash
           Bonus issued shall be subject to the limitations and restrictions, including without limitation, restrictions
-          as to time within which such Cash Bonus must be used, as applied by <span
-            class="">WPO11</span> and notified to the User at the time of issue of such amount. The
-          issue of any Cash Bonus to the user is subject to the sole discretion of <span
-            class="">WPO11</span> and cannot be demanded by any User as a matter of right. The issue
+          as to time within which such Cash Bonus must be used, as applied by <span class="">WPO11</span> and notified
+          to the User at the time of issue of such amount. The
+          issue of any Cash Bonus to the user is subject to the sole discretion of <span class="">WPO11</span> and
+          cannot be demanded by any User as a matter of right. The issue
           of any Cash Bonus by <span class="">WPO11</span> on any day shall not entitle the user to
           demand the issuance of such Cash Bonus at any subsequent period in time nor create an expectation of recurring
           issue of such Cash Bonus by <span class="">WPO11</span> to such User. The Cash Bonus
@@ -1080,9 +1091,9 @@
           pool in any Contest, in accordance with these Terms and Conditions. The Cash Bonus shall not be withdraw-able
           or transferrable to any other account of the User, including the bank account of such User, or of any other
           User or person, other that as part of the winnings of a User in any Contest(s). In case the User terminates
-          his/her account with <span class="">WPO11</span> or such account if terminated by <span
-            class="">WPO11</span>, all Cash Bonus granted to the user shall return to <span
-            class="">WPO11</span> and the User shall not have any right or interest on such points.
+          his/her account with <span class="">WPO11</span> or such account if terminated by <span class="">WPO11</span>,
+          all Cash Bonus granted to the user shall return to <span class="">WPO11</span> and the User shall not have any
+          right or interest on such points.
         </div>
         <div>All Cash Bonus credited in the User account shall be valid for unlimited time and can be utilized for
           joining cash contest.</div>
@@ -1117,9 +1128,10 @@
           warrant or make any representations concerning the accuracy thereof and, in any event, shall take no
           responsibility for inaccuracies in computation and tabulation of fantasy points or the selection of winners as
           a result of any inaccurate or incomplete scores/statistics received from such third party service provider.
-          Users and Participants agree not to make any claim or raise any complaint against <span
-            class="">WPO11</span> in this respect.</div>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Selection and Verification of Winners and Conditions
+          Users and Participants agree not to make any claim or raise any complaint against <span class="">WPO11</span>
+          in this respect.</div>
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Selection and Verification of
+          Winners and Conditions
           relating to the Prizes</div>
         <div class="text-sm md:text-base font-bold text-gray-900 pt-3">Selection of Winners</div>
         <div>Winners will be decided on the basis of the scores of the Teams in a designated match (which may last
@@ -1150,16 +1162,16 @@
             class="">WPO11</span> shall not be responsible for communications errors, commissions or
           omissions including those of the Participants due to which the results may not be communicated to the Winner.
         </div>
-        <div>The list of contestants may be downloaded in PDF format from <span
-            class="">WPO11</span> application. The winners will also be intimated by e-mail. In the
+        <div>The list of contestants may be downloaded in PDF format from <span class="">WPO11</span> application. The
+          winners will also be intimated by e-mail. In the
           event that a Participant has been declared a Winner on the above mentioned web-page but has not received any
-          communication from <span class="">WPO11</span>, such Participant may contact <span
-            class="">WPO11</span> within the time specified on the webpage.</div>
+          communication from <span class="">WPO11</span>, such Participant may contact <span class="">WPO11</span>
+          within the time specified on the webpage.</div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Verification process</div>
         <div>Only those Winners who successfully complete the verification process and provide the required documents
           within the time limit specified by <span class="">WPO11</span> shall be permitted to
-          withdraw/receive their accumulated winnings (or any part thereof). <span
-            class="">WPO11</span> shall not entertain any claims or requests for extension of time
+          withdraw/receive their accumulated winnings (or any part thereof). <span class="">WPO11</span> shall not
+          entertain any claims or requests for extension of time
           for submission of documents.</div>
         <div><span class="">WPO11</span> shall scrutinize all documents submitted and may, at its
           sole and absolute discretion, disqualify any Winner from withdrawing his accumulated winnings (or any part
@@ -1171,8 +1183,8 @@
         <div>All prizes shall be subject to deduction of tax ("TDS") as per the Income Tax Act 1961. As of April 1,
           2018, the TDS rate prescribed by the Government of India with respect to any prize money amount that is in
           excess of Rs. 10,000/- is 31.2% of the total prize money amount. In case of any revisions by the Government of
-          India to the aforementioned rate in the future, TDS will be deducted by <span
-            class="">WPO11</span> in accordance with the then current prescribed TDS rate. Winners
+          India to the aforementioned rate in the future, TDS will be deducted by <span class="">WPO11</span> in
+          accordance with the then current prescribed TDS rate. Winners
           will be provided TDS certificates in respect of such tax deductions. The Winners shall be responsible for
           payment of any other applicable tax, including but not limited to, income tax, gift tax, etc. in respect of
           the prize money.</div>
@@ -1184,15 +1196,15 @@
           playing the paid formats of the Contest(s) is a resident of any of the abovementioned states, <span
             class="">WPO11</span> shall disqualify such Participant and forfeit any prize won by
           such Participant. Further <span class="">WPO11</span> may, at its sole and absolute
-          discretion, suspend or terminate such Participant's account with <span
-            class="">WPO11</span>. Any amount remaining unused in the User's Contest Account or
+          discretion, suspend or terminate such Participant's account with <span class="">WPO11</span>. Any amount
+          remaining unused in the User's Contest Account or
           Winnings Account on the date of deactivation or deletion shall be reimbursed to the User by an online transfer
           to the User's bank account on record with <span class="">WPO11</span>, subject to the
           processing fee (if any) applicable on such transfers as set out herein.</div>
         <div>If it is found that a Participant playing the paid formats of the Contest(s) is under the age of eighteen
           (18), <span class="">WPO11</span> shall be entitled, at its sole and absolute discretion,
-          to disqualify such Participant and forfeit his/her prize. Further, <span
-            class="">WPO11</span> may, at its sole and absolute discretion, suspend or terminate
+          to disqualify such Participant and forfeit his/her prize. Further, <span class="">WPO11</span> may, at its
+          sole and absolute discretion, suspend or terminate
           such Participant's account.</div>
         <div>To the extent permitted by law, <span class="">WPO11</span> makes no representations or
           warranties as to the quality; suitability or merchantability of any prizes and shall not be liable in respect
@@ -1203,8 +1215,8 @@
           to closure of the Contest. The Winners shall bear all transaction charges levied for delivery of cash prizes.
         </div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Publicity</div>
-        <div>Acceptance of a prize by the Winner constitutes permission for <span
-            class="">WPO11</span>, and its affiliates to use the Winner's name, likeness, voice and
+        <div>Acceptance of a prize by the Winner constitutes permission for <span class="">WPO11</span>, and its
+          affiliates to use the Winner's name, likeness, voice and
           comments for advertising and promotional purposes in any media worldwide for purposes of advertising and trade
           without any further permissions or consents and / or additional compensation whatsoever.</div>
         <div>The Winners further undertake that they will be available for promotional purposes as planned and desired
@@ -1218,9 +1230,10 @@
           prohibited, then <span class="">WPO11</span> shall withdraw and / or cancel such
           Contest(s) without prior notice to any Participants or winners of any Contest(s). Users agree not to make any
           claim in respect of such cancellation or withdrawal of the Contest or Contest it in any manner.</div>
-        <div>Employees, directors, affiliates, relatives and family members of <span
-            class="">WPO11</span>, will not be eligible to participate in any Contest(s).</div>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Dispute and Dispute Resolution</div>
+        <div>Employees, directors, affiliates, relatives and family members of <span class="">WPO11</span>, will not be
+          eligible to participate in any Contest(s).</div>
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Dispute and Dispute Resolution
+        </div>
         <div>The courts of competent jurisdiction at Durgapur shall have exclusive jurisdiction to determine any and all
           disputes arising out of, or in connection with, the <span class="">WPO11</span> Services
           provided by <span class="">WPO11</span> (including the Contest(s)), the construction,
@@ -1241,25 +1254,26 @@
           arbitration and equally share the fees of the arbitrator unless the arbitral tribunal decides otherwise. The
           arbitrator shall be entitled to pass interim orders and awards, including the orders for specific performance
           and such orders would be enforceable in competent courts. The arbitrator shall give a reasoned award.</div>
-        <div>Nothing contained in these Terms and Conditions shall prevent <span
-            class="">WPO11</span> from seeking and obtaining interim or permanent equitable or
-          injunctive relief, or any other relief available to safeguard <span
-            class="">WPO11</span>'s interest prior to, during or following the filing of arbitration
+        <div>Nothing contained in these Terms and Conditions shall prevent <span class="">WPO11</span> from seeking and
+          obtaining interim or permanent equitable or
+          injunctive relief, or any other relief available to safeguard <span class="">WPO11</span>'s interest prior to,
+          during or following the filing of arbitration
           proceedings or pending the execution of a decision or award in connection with any arbitration proceedings
           from any court having jurisdiction to grant the same. The pursuit of equitable or injunctive relief shall not
           constitute a waiver on the part of <span class="">WPO11</span> to pursue any remedy for
           monetary damages through the arbitration described herein.</div>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Release and Limitations of Liability</div>
-        <div>Users shall access the <span class="">WPO11</span> Services provided on <span
-            class="">WPO11</span> voluntarily and at their own risk. <span
-            class="">WPO11</span> shall, under no circumstances be held responsible or liable on
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Release and Limitations of
+          Liability</div>
+        <div>Users shall access the <span class="">WPO11</span> Services provided on <span class="">WPO11</span>
+          voluntarily and at their own risk. <span class="">WPO11</span> shall, under no circumstances be held
+          responsible or liable on
           account of any loss or damage sustained (including but not limited to any accident, injury, death, loss of
           property) by Users or any other person or entity during the course of access to the <span
             class="">WPO11</span> Services (including participation in the Contest(s)) or as a
           result of acceptance of any prize.</div>
         <div>By entering the contests and accessing the <span class="">WPO11</span> Services
-          provided therein, Users hereby release from and agree to indemnify <span
-            class="">WPO11</span>, and/ or any of its directors, employees, partners, associates and
+          provided therein, Users hereby release from and agree to indemnify <span class="">WPO11</span>, and/ or any of
+          its directors, employees, partners, associates and
           licensors, from and against all liability, cost, loss or expense arising out their access to the <span
             class="">WPO11</span> Services including (but not limited to) personal injury and damage
           to property and whether direct, indirect, consequential, foreseeable, due to some negligent act or omission on
@@ -1268,20 +1282,20 @@
           errors or omissions, whether on behalf of itself or third parties in relation to the prizes.</div>
         <div>Users shall be solely responsible for any consequences which may arise due to their access of <span
             class="">WPO11</span> Services by conducting an illegal act or due to non-conformity
-          with these Terms and Conditions and other rules and regulations in relation to <span
-            class="">WPO11</span> Services, including provision of incorrect address or other
+          with these Terms and Conditions and other rules and regulations in relation to <span class="">WPO11</span>
+          Services, including provision of incorrect address or other
           personal details. Users also undertake to indemnify <span class="">WPO11</span> and their
           respective officers, directors, employees and agents on the happening of such an event (including without
           limitation cost of attorney, legal charges etc.) on full indemnity basis for any loss/damage suffered by <span
             class="">WPO11</span> on account of such act on the part of the Users.</div>
         <div>Users shall indemnify, defend, and hold <span class="">WPO11</span> harmless from any
           third party/entity/organization claims arising from or related to such User's engagement with the <span
-            class="">WPO11</span> or participation in any Contest. In no event shall <span
-            class="">WPO11</span> be liable to any User for acts or omissions arising out of or
+            class="">WPO11</span> or participation in any Contest. In no event shall <span class="">WPO11</span> be
+          liable to any User for acts or omissions arising out of or
           related to User's engagement with the <span class="">WPO11</span> or his/her participation
           in any Contest(s).</div>
-        <div>In consideration of <span class="">WPO11</span> allowing Users to access the <span
-            class="">WPO11</span> Services, to the maximum extent permitted by law, the Users waive
+        <div>In consideration of <span class="">WPO11</span> allowing Users to access the <span class="">WPO11</span>
+          Services, to the maximum extent permitted by law, the Users waive
           and release each and every right or claim, all actions, causes of actions (present or future) each of them has
           or may have against <span class="">WPO11</span>, its respective agents, directors,
           officers, business associates, group companies, sponsors, employees, or representatives for all and any
@@ -1305,15 +1319,15 @@
           telecommunications, hosting, and power providers), computer viruses, natural disasters or other destruction or
           damage of our facilities, acts of nature, war, civil disturbance, or any other cause beyond our reasonable
           control. In addition, <span class="">WPO11</span> does not provide any warranty as to the
-          content on the <span class="">WPO11</span>(s). <span
-            class="">WPO11</span>(s) content is distributed on an "as is, as available" basis.</div>
-        <div>Any material accessed, downloaded or otherwise obtained through <span
-            class="">WPO11</span> is done at the User's discretion, competence, acceptance and risk,
+          content on the <span class="">WPO11</span>(s). <span class="">WPO11</span>(s) content is distributed on an "as
+          is, as available" basis.</div>
+        <div>Any material accessed, downloaded or otherwise obtained through <span class="">WPO11</span> is done at the
+          User's discretion, competence, acceptance and risk,
           and the User will be solely responsible for any potential damage to User's computer system/mobile devices etc
           or loss of data that results from a User's download of any such material.</div>
-        <div><span class="">WPO11</span> shall make best endeavors to ensure that the <span
-            class="">WPO11</span>(s) is error-free and secure, however, neither <span
-            class="">WPO11</span> nor any of its partners, licensors or associates makes any
+        <div><span class="">WPO11</span> shall make best endeavors to ensure that the <span class="">WPO11</span>(s) is
+          error-free and secure, however, neither <span class="">WPO11</span> nor any of its partners, licensors or
+          associates makes any
           warranty that: the <span class="">WPO11</span>(s) will meet Users' requirements, <span
             class="">WPO11</span>(s) will be uninterrupted, timely, secure, or error free the
           results that may be obtained from the use of <span class="">WPO11</span>(s) will be
@@ -1321,8 +1335,8 @@
           Services, information, or other material that Users purchase or obtain through <span
             class="">WPO11</span>com(s) will meet Users' expectations.</div>
         <div>In case <span class="">WPO11</span> discovers any error, including any error in the
-          determination of Winners or in the transfer of amounts to a User's account, <span
-            class="">WPO11</span> reserves the right (exercisable at its discretion) to rectify the
+          determination of Winners or in the transfer of amounts to a User's account, <span class="">WPO11</span>
+          reserves the right (exercisable at its discretion) to rectify the
           error in such manner as it deems fit, including through a set-off of the erroneous payment from amounts due to
           the User or deduction from the User's account of the amount of erroneous payment. In case of exercise of
           remedies in accordance with this clause, <span class="">WPO11</span> agrees to notify the
@@ -1335,20 +1349,19 @@
           provided, or intended to be hosted on <span class="">WPO11</span> platform and requiring
           specific permission or authority from any statutory authority or any state or the central government, or the
           board of directors shall be deemed cancelled or terminated, if such permission or authority is either not
-          obtained or denied either before or after the availability of the relevant <span
-            class="">WPO11</span> Services, events or Contest(s) are hosted or provided.</div>
+          obtained or denied either before or after the availability of the relevant <span class="">WPO11</span>
+          Services, events or Contest(s) are hosted or provided.</div>
         <div>To the extent permitted under law, in the event of suspension or closure of any Services, events or
           Contests, Users (including Participants) shall not be entitled to make any demands, claims, on any nature
           whatsoever.</div>
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Miscellaneous</div>
         <div><span class="">WPO11</span> may be required under certain legislations, to notify
           User(s) of certain events. User(s) hereby acknowledge and consent that such notices will be effective upon
-          <span class="">WPO11</span> posting them on the <span
-            class="">WPO11</span> or delivering them to the User through the email address provided
+          <span class="">WPO11</span> posting them on the <span class="">WPO11</span> or delivering them to the User
+          through the email address provided
           by the User at the time of registration. User(s) may update their email address by logging into their account
-          on the <span class="">WPO11</span>. If they do not provide <span
-            class="">WPO11</span> with accurate information, <span
-            class="">WPO11</span> cannot be held liable for failure to notify the User.
+          on the <span class="">WPO11</span>. If they do not provide <span class="">WPO11</span> with accurate
+          information, <span class="">WPO11</span> cannot be held liable for failure to notify the User.
         </div>
         <div><span class="">WPO11</span> shall not be liable for any delay or failure to perform
           resulting from causes outside its reasonable control, including but not limited to any failure to perform due
@@ -1364,9 +1377,9 @@
           of or related to use of the <span class="">WPO11</span> or these Terms must be filed
           within thirty (30) days of such claim or cause of action arising or be forever barred.</div>
         <div>These Terms and Conditions, including all terms, conditions, and policies that are incorporated herein by
-          reference, constitute the entire agreement between the User(s) and <span
-            class="">WPO11</span> Fantasy Sports LLP and govern your use of the <span
-            class="">WPO11</span>, superseding any prior agreements that any User may have with
+          reference, constitute the entire agreement between the User(s) and <span class="">WPO11</span> Fantasy Sports
+          LLP and govern your use of the <span class="">WPO11</span>, superseding any prior agreements that any User may
+          have with
           <span class="">WPO11</span> Fantasy Sports LLP.
         </div>
         <div>If any part of these Terms and Conditions is determined to be indefinite, invalid, or otherwise
@@ -1383,15 +1396,16 @@
           simultaneously on the <span class="">WPO11</span> platform. Also, promotions/offers cannot
           be clubbed with Cash Bonus available with any user.</div>
 
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Standard Terms and Conditions of Promotions</div>
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Standard Terms and Conditions of
+          Promotions</div>
         <div>These standard terms and conditions of promotions (“Standard Terms”) supplement the terms of promotions
           undertaken on the <span class="">WPO11</span> website and which reference these Standard
           Terms (each a “Promotion”):</div>
         <div>Participation in any Promotion will be subject to a user complying with the Promotion Terms implemented by
           <span class="">WPO11</span> in respect of such Promotion (“Promotion Terms”) and these
           Standard Terms. By participating in any Promotion, the participant further consents to and agrees to adhere
-          with the terms and conditions of the <span class="">WPO11</span> contest and <span
-            class="">WPO11</span>’s privacy policy.
+          with the terms and conditions of the <span class="">WPO11</span> contest and <span class="">WPO11</span>’s
+          privacy policy.
         </div>
         <div>The Promotions are only open to users in India. Participation in the Promotions by proxy is not permitted.
         </div>
@@ -1416,8 +1430,8 @@
         <div>The verification process may require you to submit personal information about yourself. You agree to
           receive communication from <span class="">WPO11</span>. Any information collected in
           respect of your identity and contact details as part of a Promotion or otherwise in the course of your use of
-          the <span class="">WPO11</span> Website shall be subject to <span
-            class="">WPO11</span>’s Privacy Policy.</div>
+          the <span class="">WPO11</span> Website shall be subject to <span class="">WPO11</span>’s Privacy Policy.
+        </div>
         <div><span class="">WPO11</span> may, at its sole and absolute discretion, disqualify any
           user from a Promotion if such user engages in or it is found that such user has engaged in any illegal,
           unlawful or improper conduct (with regard to any of the Promotions or otherwise).</div>
@@ -1427,8 +1441,8 @@
           or to any third party account or to any bank/payment instrument account</div>
         <div>The deposit of the Bonus Amount (if applicable) or the grant of the free-entry (if any) shall be at the
           sole discretion of <span class="">WPO11</span> and shall be subject to the user’s
-          compliance with these Standard Terms and the applicable Promotion Terms. <span
-            class="">WPO11</span> may substitute or change the Bonus Amount(if any) or free-entry
+          compliance with these Standard Terms and the applicable Promotion Terms. <span class="">WPO11</span> may
+          substitute or change the Bonus Amount(if any) or free-entry
           (if any) offered under a Promotion at any time without notice. Users may not substitute Bonus Amount (if any)
           or free-entry (if any) for other items or exchange for cash.</div>
         <div><span class="">WPO11</span> reserves the right to withhold or forfeit the benefits of a
@@ -1454,47 +1468,47 @@
           respect of this Promotion shall be subject to the exclusive jurisdiction of the courts of Durgapur. The
           Promotions shall be governed by the laws of the Republic of India, and any disputes or disagreements in
           respect of this Promotion shall be subject to the exclusive jurisdiction of the courts of Durgapur. </div>
-        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">1. Standard Terms and Conditions of "Invite Friends"
+        <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">1. Standard Terms and Conditions of
+          "Invite Friends"
           program.</div>
         <div>The <span class="">WPO11</span> Invite Friends Program lets you invite friends to join
           <span class="">WPO11</span> ("Program"). In the event that you and your referred friend
           meet the criteria and complete all the steps specified in these terms, you and your friend can earn a Cash
           Bonus from <span class="">WPO11</span> of upto Rs. 101 ("Bonus Amount"), which Bonus
-          Amount will be redeemable to join cash contests and contests through the <span
-            class="">WPO11</span>’s mobile application("<span
-            class="">WPO11</span> Application"). To participate in the Program, please note our
+          Amount will be redeemable to join cash contests and contests through the <span class="">WPO11</span>’s mobile
+          application("<span class="">WPO11</span> Application"). To participate in the Program, please note our
           terms and conditions ("Terms") in this respect, as they govern your participation in the Program:
         </div>
-        <div>Eligibility – All users who: (i) have an account registered with <span
-            class="">WPO11</span>'s fantasy gaming platform ("Platform") which account has been
+        <div>Eligibility – All users who: (i) have an account registered with <span class="">WPO11</span>'s fantasy
+          gaming platform ("Platform") which account has been
           verified by <span class="">WPO11</span>; and (ii) are eligible to participate in the
-          pay-to play <span class="">WPO11</span> fantasy cricket, (as per the <span
-            class="">WPO11</span>'s terms and conditions, accessible at https://fantasycricket.<span
-            class="">WPO11</span>.com/in/termsandconditions); and (iii) have downloaded and
+          pay-to play <span class="">WPO11</span> fantasy cricket, (as per the <span class="">WPO11</span>'s terms and
+          conditions, accessible at https://fantasycricket.<span class="">WPO11</span>.com/in/termsandconditions); and
+          (iii) have downloaded and
           installed the <span class="">WPO11</span> Application on their respective mobile devices,
           will be eligible to participate in the Program. Participation in the Program by proxy is not permitted.</div>
         <div>Participation in the Program is voluntary. A user shall not register or operate more than one user account
           with <span class="">WPO11</span> and shall not participate in the Program with more than
           one user account with <span class="">WPO11</span>. </div>
         <div>By participating in the Program, you agree to and accept these Terms.</div>
-        <div>For the purpose of participation in the Program, you are required to have the <span
-            class="">WPO11</span> Application downloaded and installed on your mobile device.
+        <div>For the purpose of participation in the Program, you are required to have the <span class="">WPO11</span>
+          Application downloaded and installed on your mobile device.
           Through the <span class="">WPO11</span> Application, you will be provided with a unique
           link or code, which can be shared by you ("Inviter") with friends (each an "Invitee") for the purpose of
           inviting such friends to create and register an account with <span class="">WPO11</span>
           and download the <span class="">WPO11</span> Application. On receiving the link or code
           from the Inviter, the Invitee may either: (i) Click on the link, consequent to which such Invitee will be
           directed to a registration page and will be provided the option to register an account with <span
-            class="">WPO11</span> and download and install the <span
-            class="">WPO11</span> Application on his/her device; or (ii) download and install the
+            class="">WPO11</span> and download and install the <span class="">WPO11</span> Application on his/her
+          device; or (ii) download and install the
           <span class="">WPO11</span> Application on his/her device independently, register for a
-          <span class="">WPO11</span> account through the <span
-            class="">WPO11</span> Application and enter the unique code shared by the Inviter where
+          <span class="">WPO11</span> account through the <span class="">WPO11</span> Application and enter the unique
+          code shared by the Inviter where
           prompted in the <span class="">WPO11</span> Application.
         </div>
         <div>The Inviter and the Invitee will be eligible to earn the Bonus Amount subject to (amongst other terms
-          specified in these Terms): (i) the Invitee not being an existing user of <span
-            class="">WPO11</span>; and (ii) the Inviter and Invitee being eligible to participate in
+          specified in these Terms): (i) the Invitee not being an existing user of <span class="">WPO11</span>; and (ii)
+          the Inviter and Invitee being eligible to participate in
           the pay-to play <span class="">WPO11</span> fantasy cricket; and (iii) the Invitee
           successfully registering for an account with <span class="">WPO11</span> through the
           unique link or by using the unique code shared by the Inviter; and (iv) the Inviter and Invitee agreeing to
@@ -1503,8 +1517,8 @@
           Invitee’s respective mobile devices; and (v) the Inviter and Invitee verifying the Inviter’s and the Invitee’s
           respective mobile number as provided at the time of registration within thirty (30) days from the date on
           which Invitee registers for an account with <span class="">WPO11</span> ("Verification
-          Period"). For the purposes of these Terms, an 'existing user of <span
-            class="">WPO11</span>' shall mean a user who presently operates an account with the
+          Period"). For the purposes of these Terms, an 'existing user of <span class="">WPO11</span>' shall mean a user
+          who presently operates an account with the
           Platform or operated an account with the Platform at any point of time.</div>
         <div>An Invitee who is an existing user of <span class="">WPO11</span> is not permitted to
           register a new account with the Platform for the purpose of availing of the Bonus Amount. <span
@@ -1512,8 +1526,8 @@
           existing user of <span class="">WPO11</span> or not and take appropriate action.</div>
         <div>The verification process may require an Inviter/Invitee to submit personal information about the user
           (Inviter/Invitee) and documents identifying the Inviter/Invitee. The Inviter agrees to receive communication
-          from <span class="">WPO11</span> and to allow <span
-            class="">WPO11</span> to communicate with Invitees referred by you about the Inviter's
+          from <span class="">WPO11</span> and to allow <span class="">WPO11</span> to communicate with Invitees
+          referred by you about the Inviter's
           participation in the Program. Any information collected in respect of the Inviter/Invitee as part of the
           Program or otherwise in the course of such person's use of the Website shall be subject to <span
             class="">WPO11</span>'s Privacy Policy (available here: https://fantasycricket.<span
@@ -1563,8 +1577,8 @@
           Bonus Amount may be used to join private contests or be withdrawn or transferred to any other cash balance
           account held by the Inviter/Invitee with <span class="">WPO11</span> or to any third party
           account or to any bank/payment instrument account. THE BONUS AMOUNT HAS NO EXPIRY.</div>
-        <div>The deposit of the Bonus Amount shall be at the sole discretion of <span
-            class="">WPO11</span> and shall be subject to the Inviter’s/Invitee’s compliance with
+        <div>The deposit of the Bonus Amount shall be at the sole discretion of <span class="">WPO11</span> and shall be
+          subject to the Inviter’s/Invitee’s compliance with
           these Terms. <span class="">WPO11</span> may substitute or change the Bonus Amount offered
           under the Program at any time without notice. An Inviter/Invitee may not substitute the amount of Bonus Amount
           or substitute offering for other items or exchange for cash.</div>
@@ -1594,8 +1608,8 @@
 
         <div class="text-2xl md:text-3xl font-bold text-black pt-8 pb-3 font-oswald">Refund Policy</div>
         <div>All deposits made and fees paid on <span class="">WPO11</span>.com to play Fantasy
-          Cricket games or in connection with Fantasy Cricket are final. All transactions on <span
-            class="">WPO11</span> are final. Customer satisfaction is extremely important to us, so
+          Cricket games or in connection with Fantasy Cricket are final. All transactions on <span class="">WPO11</span>
+          are final. Customer satisfaction is extremely important to us, so
           only error-oriented transaction cases shall be reviewed.</div>
         <div>If you are not fully satisfied with any deposit made or fee paid and feel there is an 'Error’ in the
           transaction, please let us know about that within 3 days of the transaction date—we shall certainly review the
@@ -1620,7 +1634,7 @@
         <div class="w-full md:w-1/2 lg:w-1/3">
           <div class="flex flex-col w-full px-3">
             <div class="font-bold w-36 text-base lg:text-lg pb-4">
-              <img class="size-full" src="./assets/img/wpo11Foter.png" alt>
+              <img class="size-full" src="./assets/img/logo_wpo.png" alt>
             </div>
             <div>
               WPO11 attempts to provide best services to users by
@@ -1687,16 +1701,6 @@
                 </path>
               </svg>
               <span>About Us</span>
-            </a>
-            <a href="./blog.html"
-              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
-                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-                </path>
-              </svg>
-              <span>Blog</span>
             </a>
             <a href="./terms&Conditions.html"
               class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
@@ -1795,8 +1799,9 @@
               </svg>
               <div>
                 <div>Address</div>
-                <div>Office No. 504, Omgurudev Plaza, 26 Mechanic Nagar, Scheme No. 54, Indore, Indore, Madhya Pradesh,
-                  India, 452010 </div>
+                <div>Office No. 504, Omgurudev Plaza, 26 Mechanic Nagar,
+                  Scheme No. 54, Indore, Indore, Madhya Pradesh, India, 452010
+                </div>
               </div>
             </a>
             <a href="./contact.html"
@@ -1833,7 +1838,8 @@
       </div>
       <div
         class="w-full flex flex-wrap items-center gap-x-10 gap-y-5 justify-center pt-8 lg:pt-14 lg:mt-8 border-t border-white/20 text-xs lg:text-sm">
-        <div class="w-auto opacity-80">©2019 -2024 Rocky11 Games Private Limited . All Rights Reserved
+        <div class="w-auto opacity-80">©2019 -2024 Rocky11 Games Private
+          Limited . All Rights Reserved
           |</div>
 
       </div>

@@ -4814,6 +4814,10 @@ video {
     row-gap: 4rem;
   }
 
+  .sm\:gap-y-10{
+    row-gap: 2.5rem;
+  }
+
   .sm\:px-3{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
