@@ -12,7 +12,9 @@ module.exports = {
         // 'theme4': '#1c1c27',
       },
       fontFamily: {
-        'Inter': ['"Inter", sans-serif'],
+        'oswald': ["Oswald", "sans-serif"],
+        'open-sans': ["Open Sans", "sans-serif"],
+        // 'Inter': ['"Inter", sans-serif'],
       }
     },
   },
