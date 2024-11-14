@@ -3126,6 +3126,14 @@ video {
   padding-top: 2rem;
 }
 
+.pt-0{
+  padding-top: 0px;
+}
+
+.pt-\[88px\]{
+  padding-top: 88px;
+}
+
 .text-left{
   text-align: left;
 }
@@ -3186,6 +3194,10 @@ video {
   font-family: Oswald, sans-serif;
 }
 
+.font-open-sans{
+  font-family: Open Sans, sans-serif;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -3234,6 +3246,10 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[40px\]{
+  font-size: 40px;
 }
 
 .font-bold{
@@ -4947,6 +4963,46 @@ video {
 
   .md\:ps-10{
     padding-inline-start: 2.5rem;
+  }
+
+  .md\:pb-\[70px\]{
+    padding-bottom: 70px;
+  }
+
+  .md\:pt-20{
+    padding-top: 5rem;
+  }
+
+  .md\:pt-24{
+    padding-top: 6rem;
+  }
+
+  .md\:pt-28{
+    padding-top: 7rem;
+  }
+
+  .md\:pt-\[98px\]{
+    padding-top: 98px;
+  }
+
+  .md\:pt-\[100px\]{
+    padding-top: 100px;
+  }
+
+  .md\:pt-\[120px\]{
+    padding-top: 120px;
+  }
+
+  .md\:pt-\[130px\]{
+    padding-top: 130px;
+  }
+
+  .md\:pt-\[160px\]{
+    padding-top: 160px;
+  }
+
+  .md\:pb-\[50px\]{
+    padding-bottom: 50px;
   }
 
   .md\:text-2xl{
