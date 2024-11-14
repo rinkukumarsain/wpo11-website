@@ -1,108 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/wpo11logo.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/wpo11logo.png-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/wpo11logo.png-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/wpo11logo.png-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/wpo11logo.png-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/wpo11logo.png-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/wpo11logo.png-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/wpo11logo.png-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/wpo11logo.png-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/wpo11logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/wpo11logo.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/wpo11logo.png-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/wpo11logo.png-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+<head>
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/wpo11logo.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/wpo11logo.png-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/wpo11logo.png-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/wpo11logo.png-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/wpo11logo.png-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/wpo11logo.png-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/wpo11logo.png-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/wpo11logo.png-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/wpo11logo.png-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/wpo11logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/wpo11logo.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/wpo11logo.png-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/wpo11logo.png-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-    <link rel="stylesheet" href="./assets/css/output.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="./assets/css/output.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
-    const overlay = document.getElementById("sidebar-overlay");
-    sidebar.classList.toggle("translate-x-full");
-    overlay.classList.toggle("invisible");
+      const overlay = document.getElementById("sidebar-overlay");
+      sidebar.classList.toggle("translate-x-full");
+      overlay.classList.toggle("invisible");
     }
   </script>
 
-  </head>
+</head>
 
-  <body>
-       <!-- header start -->
-       <section class="fixed w-full top-0 z-[999]">
-        <div class="border shadow-lg shadow-black-50 bg-white z-[999] p-2">
-          <div class="flex items-center justify-between md:mx-5 md:px-2 lg:mx-8 lg:px-5">
-            <div class="flex z-20">
-              <a href="./index.html" class="logo h-16 md:h-20 inline-block w-28">
-                <img class="size-full" src="./assets/img/wpo11logo.png" alt="Logo" />
-              </a>
-            </div>
-            <div class="md:flex md:gap-14 hidden w-3/4 justify-end items-center">
-              <a class="text-theme1 font-medium" href="./about.html">About</a>
-              <a class="text-theme1 font-medium" href="./blog.html">Blog</a>
-              <a class="text-theme1 font-medium" href="####">Download App</a>
-              <a class="text-theme1 font-medium" href="howtoplay.html">How to play</a>
-              <a class="text-theme1 font-medium" href="./contactus.html">Contact us</a>
-            </div>
-            <div class="flex items-center md:hidden text-theme1">
-              <button onclick="toggleSidebar()" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="25px" width="25px">
-                  <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32z"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
+<body>
+  <!-- header start -->
+  <section class="fixed w-full top-0 z-[999]">
+    <div class="border shadow-lg shadow-black-50 bg-white z-[999] p-2">
+      <div class="flex items-center justify-between md:mx-5 md:px-2 lg:mx-8 lg:px-5">
+        <div class="flex z-20">
+          <a href="./index.html" class="logo h-16 md:h-20 inline-block w-28">
+            <img class="size-full" src="./assets/img/wpo11logo.png" alt="Logo" />
+          </a>
         </div>
-      </section>
-      
-      <!-- Sidebar Overlay -->
-  <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-80 z-[998] invisible transition-opacity duration-300 ease-in-out" onclick="toggleSidebar()"></div>
-  
-      <!-- Sidebar -->
-      <div class="">
-      <div id="sidebar" class="fixed top-0 right-0 h-full w-64 bg-gradient-to-t from-theme1 to-theme2 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[1000]">
-        <div class="flex justify-end p-4">
-          <!-- <div class="h-16">
-            <img class="size-full" src="./assets/img/wpo11logo.png" alt="">
-          </div> -->
-          <button onclick="toggleSidebar()" class="p-2 text-lg">
-            ✕
+        <div class="md:flex md:gap-14 hidden w-3/4 justify-end items-center">
+          <a class="text-theme1 font-medium" href="./about.html">About</a>
+          <a class="text-theme1 font-medium" href="./blog.html">Blog</a>
+          <a class="text-theme1 font-medium" href="####">Download App</a>
+          <a class="text-theme1 font-medium" href="howtoplay.html">How to play</a>
+          <a class="text-theme1 font-medium" href="./contactus.html">Contact us</a>
+        </div>
+        <div class="flex items-center md:hidden text-theme1">
+          <button onclick="toggleSidebar()" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="25px"
+              width="25px">
+              <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32z"></path>
+            </svg>
           </button>
         </div>
-        <div class="px-4 py-2">
-          <ul>
-            <li class="py-2">
-              <a class="text-white font-medium" href="./about.html">About</a>
-            </li>
-            <li class="py-2">
-              <a class="text-white font-medium" href="./blog.html">Blog</a>
-            </li>
-            <li class="py-2">
-              <a class="text-white font-medium" href="#">Download App</a>
-            </li>
-            <li class="py-2">
-              <a class="text-white font-medium" href="howtoplay.html">How to play</a>
-            </li>
-            <li class="py-2">
-              <a class="text-white font-medium" href="./contactus.html">Contact us</a>
-            </li>
-          </ul>
-        </div>
-      </div>  
+      </div>
     </div>
-      <!-- header ends -->
+  </section>
 
-      <!-- hero section start -->
+  <!-- Sidebar Overlay -->
+  <div id="sidebar-overlay"
+    class="fixed inset-0 bg-black bg-opacity-80 z-[998] invisible transition-opacity duration-300 ease-in-out"
+    onclick="toggleSidebar()"></div>
+
+  <!-- Sidebar -->
+  <div class="">
+    <div id="sidebar"
+      class="fixed top-0 right-0 h-full w-64 bg-gradient-to-t from-theme1 to-theme2 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-[1000]">
+      <div class="flex justify-end p-4">
+        <!-- <div class="h-16">
+            <img class="size-full" src="./assets/img/wpo11logo.png" alt="">
+          </div> -->
+        <button onclick="toggleSidebar()" class="p-2 text-lg">
+          ✕
+        </button>
+      </div>
+      <div class="px-4 py-2">
+        <ul>
+          <li class="py-2">
+            <a class="text-white font-medium" href="./about.html">About</a>
+          </li>
+          <li class="py-2">
+            <a class="text-white font-medium" href="./blog.html">Blog</a>
+          </li>
+          <li class="py-2">
+            <a class="text-white font-medium" href="#">Download App</a>
+          </li>
+          <li class="py-2">
+            <a class="text-white font-medium" href="howtoplay.html">How to play</a>
+          </li>
+          <li class="py-2">
+            <a class="text-white font-medium" href="./contactus.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- header ends -->
+
+  <!-- hero section start -->
   <section>
     <div id="heroColor" data-color="blue">
       <span
@@ -110,7 +114,7 @@
         <span class="via-blue-500 from-blue-100 to-blue-100 *:*:text-blue-400"></span>
         <span class="bg-blue-900 hover:bg-blue-700"></span>
       </span>
-      <div class="flex w-full relative bg-slate-50 select-none">
+      <div class="flex w-full relative bg-slate-50">
         <div class="size-full relative !z-10">
           <div
             class="colorApply1 flex size-full items-center justify-center rounded-b-2xl relative overflow-hidden shadow-lg before:absolute before:inset-0 before:bg-cover before:bg-right before:rounded-b-2xl before:bg-gradient-to-r before:mix-blend-multiply after:absolute after:rounded-b-2xl after:inset-0 after:bg-repeat after:[background-image:url(../img/grid.svg)] shadow-orange-950 before:from-orange-950 before:via-orange-900 before:to-orange-800">
@@ -132,7 +136,7 @@
             <div
               class="relative overflow-hidden z-10 text-center 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl md:max-w-3xl sm:max-w-3xl max-w-2xl px-6 lg:px-8 w-full lg:pt-40 sm:pt-32 pt-28 pb-12">
               <div class="max-md:text-2xl/tight max-xl:text-3xl/tight text-4xl/tight font-light text-white">
-                <span class="colorApply3 font-bold block text-balance pb-1 shadow-blue-950 via-blue-500">
+                <!-- <span class="colorApply3 font-bold block text-balance pb-1 shadow-blue-950 via-blue-500">
                   <div class="w-full mx-auto max-w-2xl">
                     <label for="searchBlog" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
                     <form class="relative searchBlogForm" novalidate="">
@@ -144,10 +148,10 @@
                         </svg>
                       </div>
                       <input type="search" value="" id="searchBlog"
-                        class="block w-full p-4 md:ps-10 pe-24 text-sm text-gray-900 border border-gray-300 rounded-lg rounded-br-none bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                        class="block w-full p-4 md:ps-10 pe-24 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
                         placeholder="Search App, Web, Fantasy..." required="" />
                       <div
-                        class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg rounded-br-none text-sm px-4 py-2">
+                        class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">
                         <svg class="size-4 text-gray-100 md:hidden" aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -157,10 +161,13 @@
                       </div>
                     </form>
                   </div>
-                </span>
+                </span> -->
+                <div class="text-white font-extrabold text-5xl font-oswald tracking-wide">
+                  Blog
+                </div>
               </div>
               <div class="max-md:text-sm text-base text-white pt-5 text-balance mx-auto w-10/12 empty:hidden"></div>
-              <div class="flex flex-col pt-4">
+              <!-- <div class="flex flex-col pt-4">
                 <div
                   class="flex flex-wrap justify-center gap-2 py-5 text-balance 2xl:max-w-5xl xl:max-w-4xl lg:max-w-3xl md:max-w-2xl sm:max-w-xl max-w-lg mx-auto *:relative *:font-semibold *:md:text-sm *:text-xs *:flex *:text-white/80 *:bg-white/10 *:border-2 *:border-white/10 *:hover:border-white/20 *:items-center *:gap-x-2 *:rounded-full *:md:pr-4 *:pr-3 *:pl-3 *:py-1 *:*:size-2 *:*:lg:size-2.5 *:*:opacity-90">
                   <a href="javascript:;" class="group/db">
@@ -218,7 +225,7 @@
                     ON DEMAND
                   </a>
                 </div>
-              </div>
+              </div> -->
               <div class="mt-10 flex gap-4 justify-center empty:hidden"></div>
             </div>
           </div>
@@ -227,692 +234,685 @@
     </div>
   </section>
   <!-- hero section end -->
-<!-- blog section start  -->
-<section class="blogSection pt-10 bg-gray-100 ">
-<div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative py-10">
-  <div class="flex flex-wrap h-full">
-    <div class="w-3/5 sm:pe-4 pe-2">
-      <div class="w-full h-full">
-        <img src="./assets/img/blog1.webp" class="rounded-lg h-full w-full" alt="">
+  <!-- blog section start  -->
+  <section class="blogSection pt-10 bg-gray-100 ">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative py-10">
+      <div class="flex flex-wrap h-full">
+        <div class="w-3/5 sm:pe-4 pe-2">
+          <div class="w-full h-full">
+            <img src="./assets/img/blog1.webp" class="rounded-lg h-full w-full" alt="">
+          </div>
+        </div>
+        <div class="w-2/5">
+          <div class="flex flex-wrap flex-col h-full sm:gap-4 gap-2">
+            <div class="h-48">
+              <img src="./assets/img/blog2.webp" class="rounded-lg h-full w-full" alt="">
+            </div>
+            <div class="h-48">
+              <img src="./assets/img/blog3.webp" class="rounded-lg h-full w-full" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap mt-4 lg:gap-0 gap-5">
+        <div class="lg:w-3/5 w-full pe-4 ">
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-7">
+            <div>
+              <div class="overflow-hidden h-48 rounded-lg">
+                <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/kings_blog.jpg"
+                  class="rounded-lg size-full" alt="">
+              </div>
+              <div class="text-slate-900 text-lg font-bold leading-tight mt-2">Deck of Cards: How Many Kings Are in a
+                Deck of Cards?</div>
+              <div class="text-gray-700 md:text-base text-sm font-medium mt-3"> Veniam nesciunt at nulla sed fugit atque
+                suscipit labore.</div>
+            </div>
+            <div>
+              <div class="overflow-hidden h-48 rounded-lg">
+                <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/facecard_blog.jpg"
+                  class="rounded-lg size-full" alt="">
+              </div>
+              <div class="text-slate-900 text-lg font-bold leading-tight mt-2">Deck of Cards: How Many Kings Are in a
+                Deck of Cards?</div>
+              <div class="text-gray-700 md:text-base text-sm font-medium mt-3"> Veniam nesciunt at nulla sed fugit atque
+                suscipit labore.</div>
+            </div>
+            <div>
+              <div class="overflow-hidden h-48 rounded-lg">
+                <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/kings_blog.jpg"
+                  class="rounded-lg size-full" alt="">
+              </div>
+              <div class="text-slate-900 text-lg font-bold leading-tight mt-2">Deck of Cards: How Many Kings Are in a
+                Deck of Cards?</div>
+              <div class="text-gray-700 md:text-base text-sm font-medium mt-3"> Veniam nesciunt at nulla sed fugit atque
+                suscipit labore.</div>
+            </div>
+            <div>
+              <div class="overflow-hidden h-48 rounded-lg">
+                <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/facecard_blog.jpg"
+                  class="rounded-lg size-full" alt="">
+              </div>
+              <div class="text-slate-900 text-lg font-bold leading-tight mt-2">Deck of Cards: How Many Kings Are in a
+                Deck of Cards?</div>
+              <div class="text-gray-700 md:text-base text-sm font-medium mt-3"> Veniam nesciunt at nulla sed fugit atque
+                suscipit labore.</div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-2/5 w-full ">
+          <div class="shadow-md shadow-gray-300 bg-white p-4 rounded-lg">
+            <div class="text-black text-xl font-bold pb-2 border-b border-gray-700">Most Recent Posts</div>
+            <div class="mt-3">
+              <a href="javascript:;">
+                <div class="flex items-center">
+                  <div class="w-32 h-16 rounded-lg overflow-hidden">
+                    <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/kings_blog.jpg"
+                      class="size-full" alt="">
+                  </div>
+                  <div class="ms-4 pb-2 border-b border-gray-300">
+                    <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many
+                      Kings Are in a Deck of Cards?</div>
+                    <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mt-5">
+              <a href="javascript:;">
+                <div class="flex items-center">
+                  <div class="w-32 h-16 rounded-lg overflow-hidden">
+                    <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/t20_blog-1.jpg"
+                      class="size-full" alt="">
+                  </div>
+                  <div class="ms-4 pb-2 border-b border-gray-300">
+                    <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many
+                      Kings Are in a Deck of Cards?</div>
+                    <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mt-5">
+              <a href="javascript:;">
+                <div class="flex items-center">
+                  <div class="w-32 h-16 rounded-lg overflow-hidden">
+                    <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/RR_blog.jpg"
+                      class="size-full" alt="">
+                  </div>
+                  <div class="ms-4 pb-2 border-b border-gray-300">
+                    <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many
+                      Kings Are in a Deck of Cards?</div>
+                    <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mt-5">
+              <a href="javascript:;">
+                <div class="flex items-center">
+                  <div class="w-32 h-16 rounded-lg overflow-hidden">
+                    <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/t20_blog-1.jpg"
+                      class="size-full" alt="">
+                  </div>
+                  <div class="ms-4 pb-2 border-b border-gray-300">
+                    <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many
+                      Kings Are in a Deck of Cards?</div>
+                    <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mt-5">
+              <a href="javascript:;">
+                <div class="flex items-center">
+                  <div class="w-32 h-16 rounded-lg overflow-hidden">
+                    <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/RR_blog.jpg"
+                      class="size-full" alt="">
+                  </div>
+                  <div class="ms-4 pb-2 border-b border-gray-300">
+                    <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many
+                      Kings Are in a Deck of Cards?</div>
+                    <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
-    <div class="w-2/5">
-      <div class="flex flex-wrap flex-col h-full sm:gap-4 gap-2">
-        <div class="h-48">
-            <img src="./assets/img/blog2.webp" class="rounded-lg h-full w-full" alt="">
-        </div>
-        <div class="h-48">
-          <img src="./assets/img/blog3.webp" class="rounded-lg h-full w-full" alt="">
-      </div>
-      </div>
-    </div>
-  </div>
-  <div class="flex flex-wrap mt-4 lg:gap-0 gap-5">
-    <div class="lg:w-3/5 w-full pe-4 ">
-      <div class="grid md:grid-cols-2 grid-cols-1 gap-7">
-        <div>
-          <div class="overflow-hidden h-48 rounded-lg">
-            <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/kings_blog.jpg" class="rounded-lg size-full" alt="">
-          </div>
-          <div class="text-slate-900 text-lg font-bold leading-tight mt-2">Deck of Cards: How Many Kings Are in a Deck of Cards?</div>
-          <div class="text-gray-700 md:text-base text-sm font-medium mt-3"> Veniam nesciunt at nulla sed fugit atque suscipit labore.</div>
-        </div>
-        <div>
-          <div class="overflow-hidden h-48 rounded-lg">
-            <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/facecard_blog.jpg" class="rounded-lg size-full" alt="">
-          </div>
-          <div class="text-slate-900 text-lg font-bold leading-tight mt-2">Deck of Cards: How Many Kings Are in a Deck of Cards?</div>
-          <div class="text-gray-700 md:text-base text-sm font-medium mt-3"> Veniam nesciunt at nulla sed fugit atque suscipit labore.</div>
-        </div>
-        <div>
-          <div class="overflow-hidden h-48 rounded-lg">
-            <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/kings_blog.jpg" class="rounded-lg size-full" alt="">
-          </div>
-          <div class="text-slate-900 text-lg font-bold leading-tight mt-2">Deck of Cards: How Many Kings Are in a Deck of Cards?</div>
-          <div class="text-gray-700 md:text-base text-sm font-medium mt-3"> Veniam nesciunt at nulla sed fugit atque suscipit labore.</div>
-        </div>
-        <div>
-          <div class="overflow-hidden h-48 rounded-lg">
-            <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/facecard_blog.jpg" class="rounded-lg size-full" alt="">
-          </div>
-          <div class="text-slate-900 text-lg font-bold leading-tight mt-2">Deck of Cards: How Many Kings Are in a Deck of Cards?</div>
-          <div class="text-gray-700 md:text-base text-sm font-medium mt-3"> Veniam nesciunt at nulla sed fugit atque suscipit labore.</div>
-        </div>
-      </div>
-    </div>
-    <div class="lg:w-2/5 w-full ">
-      <div class="shadow-md shadow-gray-300 bg-white p-4 rounded-lg">
-        <div class="text-black text-xl font-bold pb-2 border-b border-gray-700">Most Recent Posts</div>
-        <div class="mt-3">
-          <a href="javascript:;">
-            <div class="flex items-center">
-              <div class="w-32 h-16 rounded-lg overflow-hidden">
-                <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/kings_blog.jpg" class="size-full" alt="">
-              </div>
-              <div class="ms-4 pb-2 border-b border-gray-300">
-                <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many Kings Are in a Deck of Cards?</div>
-                <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024  </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="mt-5">
-          <a href="javascript:;">
-            <div class="flex items-center">
-              <div class="w-32 h-16 rounded-lg overflow-hidden">
-                <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/t20_blog-1.jpg" class="size-full" alt="">
-              </div>
-              <div class="ms-4 pb-2 border-b border-gray-300">
-                <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many Kings Are in a Deck of Cards?</div>
-                <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024  </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="mt-5">
-          <a href="javascript:;">
-            <div class="flex items-center">
-              <div class="w-32 h-16 rounded-lg overflow-hidden">
-                <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/RR_blog.jpg" class="size-full" alt="">
-              </div>
-              <div class="ms-4 pb-2 border-b border-gray-300">
-                <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many Kings Are in a Deck of Cards?</div>
-                <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024  </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="mt-5">
-          <a href="javascript:;">
-            <div class="flex items-center">
-              <div class="w-32 h-16 rounded-lg overflow-hidden">
-                <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/t20_blog-1.jpg" class="size-full" alt="">
-              </div>
-              <div class="ms-4 pb-2 border-b border-gray-300">
-                <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many Kings Are in a Deck of Cards?</div>
-                <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024  </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="mt-5">
-          <a href="javascript:;">
-            <div class="flex items-center">
-              <div class="w-32 h-16 rounded-lg overflow-hidden">
-                <img src="https://8790268.fs1.hubspotusercontent-na1.net/hubfs/8790268/RR_blog.jpg" class="size-full" alt="">
-              </div>
-              <div class="ms-4 pb-2 border-b border-gray-300">
-                <div class="sm:text-base text-sm leading-tight  text-black font-semibold">Deck of Cards: How Many Kings Are in a Deck of Cards?</div>
-                <div class="flex items-center text-xs text-gray-800 "><span class="pe-2">4 </span>| May 2, 2024  </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-      </div>
-    </div>
-  </div>
-</div>
-</section>
+  </section>
 
 
 
 
 
-<!-- blog section end  -->
+  <!-- blog section end  -->
 
- <!-- blog swiper start -->
- <section>
-  <div class="bg-white relative overflow-hidden py-6 md:py-8 lg:py-16 select-none">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative">
-      <p class="max-md:text-xl/tight max-xl:text-2xl/tight text-3xl/tight tracking-[-0.04em] text-black text-center">
-        <span class="font-normal block pb-3">Stay Informed Of Latest Innovations and Trends With Our
-          Blogs!</span>
-        <span class="font-bold text-theme4">
-          Explore our insightful blogs to stay abreast of the latest
-          innovations and trends. Stay informed, stay ahead.</span>
-      </p>
-      <div class="mx-auto md:mt-10 flex gap-x-8 gap-y-16 pt-10 sm:pt-8 lg:mx-0">
-        <div class="swiper blogsSwiper w-full swiper-initialized swiper-horizontal swiper-backface-hidden">
-          <div class="swiper-wrapper flex items-center pb-8 -mb-8" id="swiper-wrapper-f5ad9b8dd375ae9d"
-            aria-live="polite" style="
+  <!-- blog swiper start -->
+  <!-- <section>
+    <div class="bg-white relative overflow-hidden py-6 md:py-8 lg:py-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative">
+        <p class="max-md:text-xl/tight max-xl:text-2xl/tight text-3xl/tight tracking-[-0.04em] text-black text-center">
+          <span class="font-normal block pb-3">Stay Informed Of Latest Innovations and Trends With Our
+            Blogs!</span>
+          <span class="font-bold text-theme4">
+            Explore our insightful blogs to stay abreast of the latest
+            innovations and trends. Stay informed, stay ahead.</span>
+        </p>
+        <div class="mx-auto md:mt-10 flex gap-x-8 gap-y-16 pt-10 sm:pt-8 lg:mx-0">
+          <div class="swiper blogsSwiper w-full swiper-initialized swiper-horizontal swiper-backface-hidden">
+            <div class="swiper-wrapper flex items-center pb-8 -mb-8" id="swiper-wrapper-f5ad9b8dd375ae9d"
+              aria-live="polite" style="
               transition-duration: 0ms;
               transform: translate3d(0px, 0px, 0px);
               transition-delay: 0ms;
             ">
-            <div class="swiper-slide rounded-2xl group/blog p-3 swiper-slide-active" role="group" aria-label="1 / 5"
-              style="width: 433.846px; margin-right: 30px">
-              <a href="javascript:;"
-                class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+              <div class="swiper-slide rounded-2xl group/blog p-3 swiper-slide-active" role="group" aria-label="1 / 5"
+                style="width: 433.846px; margin-right: 30px">
+                <a href="javascript:;"
+                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl shadow-md shadow-gray-300">
+                  <img class="w-full aspect-[385/221] rounded-2xl" width="385" height="217" srcset="
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-640w.webp?id=03d810edc11bb7548702b2fc5751ce97 1x,
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971 2x
-                  "
-                  src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971"
-                  data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971"
-                  alt="Develop Fantasy Cricket App With Top Features For T20 World Cup 2024" />
-                <div class="w-full p-6">
-                  <div class="flex items-center gap-x-4 text-xs">
-                    <time datetime="2023-11-27" class="text-gray-500">Apr 29, 2024</time>
-                    <div
-                      class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                      Fantasy Sports
+                  " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971"
+                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971"
+                    alt="Develop Fantasy Cricket App With Top Features For T20 World Cup 2024" />
+                  <div class="w-full p-6">
+                    <div class="flex items-center gap-x-4 text-xs">
+                      <time datetime="2023-11-27" class="text-gray-500">Apr 29, 2024</time>
+                      <div
+                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                        Fantasy Sports
+                      </div>
                     </div>
-                  </div>
-                  <div class="group relative">
-                    <div
-                      class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                      Develop Fantasy Cricket App With Top Features For T20
-                      World Cup 2024
+                    <div class="group relative">
+                      <div
+                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                        Develop Fantasy Cricket App With Top Features For T20
+                        World Cup 2024
+                      </div>
+                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                        The popularity of cricket today urges businesses to
+                        develop fantasy cricket app development ideas. It will
+                        help them take their fantasy business to the next
+                        level.
+                      </p>
                     </div>
-                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                      The popularity of cricket today urges businesses to
-                      develop fantasy cricket app development ideas. It will
-                      help them take their fantasy business to the next
-                      level.
-                    </p>
-                  </div>
-                  <div class="relative mt-8 flex items-center gap-x-4">
-                    <img srcset="
+                    <div class="relative mt-8 flex items-center gap-x-4">
+                      <img srcset="
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-64w.webp?id=bb1fa39a4cc24f7751e83c927d5c016a  1x,
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19 2x
-                      "
-                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
-                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
-                      alt="Lokesh Kumar" class="h-10 w-10 rounded-full bg-gray-50" />
-                    <div class="text-sm leading-6">
-                      <p class="font-semibold text-gray-900">Written by</p>
-                      <p class="text-gray-600">Lokesh Kumar</p>
+                      " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
+                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
+                        alt="Lokesh Kumar" class="h-10 w-10 rounded-full bg-gray-50" />
+                      <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">Written by</p>
+                        <p class="text-gray-600">Lokesh Kumar</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide rounded-2xl group/blog p-3 swiper-slide-next" role="group" aria-label="2 / 5"
-              style="width: 433.846px; margin-right: 30px">
-              <a href="javascript:;"
-                class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+                </a>
+              </div>
+              <div class="swiper-slide rounded-2xl group/blog p-3 swiper-slide-next" role="group" aria-label="2 / 5"
+                style="width: 433.846px; margin-right: 30px">
+                <a href="javascript:;"
+                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl shadow-md shadow-gray-300">
+                  <img class="w-full aspect-[385/221] rounded-2xl" width="385" height="217" srcset="
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-640w.webp?id=283cf47e864768e842db4b7650ac454a 1x,
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093 2x
-                  "
-                  src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093"
-                  data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093"
-                  alt="How To Build An Alcohol Delivery App Like Drizly?" />
-                <div class="w-full p-6">
-                  <div class="flex items-center gap-x-4 text-xs">
-                    <time datetime="2023-11-27" class="text-gray-500">Apr 26, 2024</time>
-                    <div
-                      class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                      On Demand
+                  " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093"
+                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093"
+                    alt="How To Build An Alcohol Delivery App Like Drizly?" />
+                  <div class="w-full p-6">
+                    <div class="flex items-center gap-x-4 text-xs">
+                      <time datetime="2023-11-27" class="text-gray-500">Apr 26, 2024</time>
+                      <div
+                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                        On Demand
+                      </div>
                     </div>
-                  </div>
-                  <div class="group relative">
-                    <div
-                      class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                      How To Build An Alcohol Delivery App Like Drizly?
+                    <div class="group relative">
+                      <div
+                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                        How To Build An Alcohol Delivery App Like Drizly?
+                      </div>
+                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                        Would you like to build an alcohol delivery app like
+                        Drizly? Ordering alcohol online and having it
+                        delivered to users' doorstep has become popular in
+                        recent years.
+                      </p>
                     </div>
-                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                      Would you like to build an alcohol delivery app like
-                      Drizly? Ordering alcohol online and having it
-                      delivered to users' doorstep has become popular in
-                      recent years.
-                    </p>
-                  </div>
-                  <div class="relative mt-8 flex items-center gap-x-4">
-                    <img srcset="
+                    <div class="relative mt-8 flex items-center gap-x-4">
+                      <img srcset="
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-64w.webp?id=b8bd9543177d22b0f5e4339eb1d65a35  1x,
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907 2x
-                      "
-                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
-                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
-                      alt="Dipti Singhal" class="h-10 w-10 rounded-full bg-gray-50" />
-                    <div class="text-sm leading-6">
-                      <p class="font-semibold text-gray-900">Written by</p>
-                      <p class="text-gray-600">Dipti Singhal</p>
+                      " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
+                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
+                        alt="Dipti Singhal" class="h-10 w-10 rounded-full bg-gray-50" />
+                      <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">Written by</p>
+                        <p class="text-gray-600">Dipti Singhal</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide rounded-2xl group/blog p-3" role="group" aria-label="3 / 5"
-              style="width: 433.846px; margin-right: 30px">
-              <a href="javascript:;"
-                class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+                </a>
+              </div>
+              <div class="swiper-slide rounded-2xl group/blog p-3" role="group" aria-label="3 / 5"
+                style="width: 433.846px; margin-right: 30px">
+                <a href="javascript:;"
+                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl shadow-md shadow-gray-300">
+                  <img class="w-full aspect-[385/221] rounded-2xl" width="385" height="217" srcset="
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-640w.webp?id=fd7b497fe8c0a71afa4429cd5a83dcbb 1x,
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526 2x
-                  "
-                  src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526"
-                  data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526"
-                  alt="How Much Does It Cost To Build An App In Saudi Arabia?" />
-                <div class="w-full p-6">
-                  <div class="flex items-center gap-x-4 text-xs">
-                    <time datetime="2023-11-27" class="text-gray-500">Apr 24, 2024</time>
-                    <div
-                      class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                      Mobile App
+                  " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526"
+                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526"
+                    alt="How Much Does It Cost To Build An App In Saudi Arabia?" />
+                  <div class="w-full p-6">
+                    <div class="flex items-center gap-x-4 text-xs">
+                      <time datetime="2023-11-27" class="text-gray-500">Apr 24, 2024</time>
+                      <div
+                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                        Mobile App
+                      </div>
                     </div>
-                  </div>
-                  <div class="group relative">
-                    <div
-                      class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                      How Much Does It Cost To Build An App In Saudi Arabia?
+                    <div class="group relative">
+                      <div
+                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                        How Much Does It Cost To Build An App In Saudi Arabia?
+                      </div>
+                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                        The cost to build an app in Saudi Arabia can be
+                        influenced by your project requirements. Also, some
+                        variables affect the custom mobile app development
+                        cost in Saudi Arabia.
+                      </p>
                     </div>
-                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                      The cost to build an app in Saudi Arabia can be
-                      influenced by your project requirements. Also, some
-                      variables affect the custom mobile app development
-                      cost in Saudi Arabia.
-                    </p>
-                  </div>
-                  <div class="relative mt-8 flex items-center gap-x-4">
-                    <img srcset="
+                    <div class="relative mt-8 flex items-center gap-x-4">
+                      <img srcset="
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-64w.webp?id=255117a0d62022ff6ab02f890033498d  1x,
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a 2x
-                      "
-                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a"
-                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a"
-                      alt="Dipti Singhal" class="h-10 w-10 rounded-full bg-gray-50" />
-                    <div class="text-sm leading-6">
-                      <p class="font-semibold text-gray-900">Written by</p>
-                      <p class="text-gray-600">Mohit Mittal</p>
+                      " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a"
+                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a"
+                        alt="Dipti Singhal" class="h-10 w-10 rounded-full bg-gray-50" />
+                      <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">Written by</p>
+                        <p class="text-gray-600">Mohit Mittal</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide rounded-2xl group/blog p-3" role="group" aria-label="4 / 5"
-              style="width: 433.846px; margin-right: 30px">
-              <a href="javascript:;"
-                class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+                </a>
+              </div>
+              <div class="swiper-slide rounded-2xl group/blog p-3" role="group" aria-label="4 / 5"
+                style="width: 433.846px; margin-right: 30px">
+                <a href="javascript:;"
+                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl shadow-md shadow-gray-300">
+                  <img class="w-full aspect-[385/221] rounded-2xl" width="385" height="217" srcset="
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-640w.webp?id=8774d6a1ee535e368cedde3840002bc1 1x,
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd 2x
-                  "
-                  src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd"
-                  data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd"
-                  alt="The Ultimate Guide For Creating A Calendar App 2024" />
-                <div class="w-full p-6">
-                  <div class="flex items-center gap-x-4 text-xs">
-                    <time datetime="2023-11-27" class="text-gray-500">Apr 21, 2024</time>
-                    <div
-                      class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                      Mobile App
+                  " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd"
+                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd"
+                    alt="The Ultimate Guide For Creating A Calendar App 2024" />
+                  <div class="w-full p-6">
+                    <div class="flex items-center gap-x-4 text-xs">
+                      <time datetime="2023-11-27" class="text-gray-500">Apr 21, 2024</time>
+                      <div
+                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                        Mobile App
+                      </div>
                     </div>
-                  </div>
-                  <div class="group relative">
-                    <div
-                      class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                      The Ultimate Guide For Creating A Calendar App 2024
+                    <div class="group relative">
+                      <div
+                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                        The Ultimate Guide For Creating A Calendar App 2024
+                      </div>
+                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                        Let's talk about how to create a calendar app! We will
+                        also discuss essential technologies and tools for
+                        developing or integrating a calendar app.
+                      </p>
                     </div>
-                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                      Let's talk about how to create a calendar app! We will
-                      also discuss essential technologies and tools for
-                      developing or integrating a calendar app.
-                    </p>
-                  </div>
-                  <div class="relative mt-8 flex items-center gap-x-4">
-                    <img srcset="
+                    <div class="relative mt-8 flex items-center gap-x-4">
+                      <img srcset="
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-64w.webp?id=b8bd9543177d22b0f5e4339eb1d65a35  1x,
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907 2x
-                      "
-                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
-                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
-                      alt="Dipti Singhal" class="h-10 w-10 rounded-full bg-gray-50" />
-                    <div class="text-sm leading-6">
-                      <p class="font-semibold text-gray-900">Written by</p>
-                      <p class="text-gray-600">Dipti Singhal</p>
+                      " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
+                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
+                        alt="Dipti Singhal" class="h-10 w-10 rounded-full bg-gray-50" />
+                      <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">Written by</p>
+                        <p class="text-gray-600">Dipti Singhal</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide rounded-2xl group/blog p-3" role="group" aria-label="5 / 5"
-              style="width: 433.846px; margin-right: 30px">
-              <a href="javascript:;"
-                class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+                </a>
+              </div>
+              <div class="swiper-slide rounded-2xl group/blog p-3" role="group" aria-label="5 / 5"
+                style="width: 433.846px; margin-right: 30px">
+                <a href="javascript:;"
+                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl shadow-md shadow-gray-300">
+                  <img class="w-full aspect-[385/221] rounded-2xl" width="385" height="217" srcset="
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-640w.webp?id=2d1a43d1f10da824d3a1615e4a2c827c 1x,
                     https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1 2x
-                  "
-                  src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1"
-                  data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1"
-                  alt="How To Develop A Fitness App Like Strava?" />
-                <div class="w-full p-6">
-                  <div class="flex items-center gap-x-4 text-xs">
-                    <time datetime="2023-11-27" class="text-gray-500">Apr 17, 2024</time>
-                    <div
-                      class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                      Mobile App
+                  " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1"
+                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1"
+                    alt="How To Develop A Fitness App Like Strava?" />
+                  <div class="w-full p-6">
+                    <div class="flex items-center gap-x-4 text-xs">
+                      <time datetime="2023-11-27" class="text-gray-500">Apr 17, 2024</time>
+                      <div
+                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                        Mobile App
+                      </div>
                     </div>
-                  </div>
-                  <div class="group relative">
-                    <div
-                      class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                      How To Develop A Fitness App Like Strava?
+                    <div class="group relative">
+                      <div
+                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                        How To Develop A Fitness App Like Strava?
+                      </div>
+                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                        This blog will guide you through the Strava fitness
+                        mobile app development process, covering the essential
+                        features, development steps, and even why IMG Global
+                        Infotech should be your trusted partner in this
+                        journey.
+                      </p>
                     </div>
-                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                      This blog will guide you through the Strava fitness
-                      mobile app development process, covering the essential
-                      features, development steps, and even why IMG Global
-                      Infotech should be your trusted partner in this
-                      journey.
-                    </p>
-                  </div>
-                  <div class="relative mt-8 flex items-center gap-x-4">
-                    <img srcset="
+                    <div class="relative mt-8 flex items-center gap-x-4">
+                      <img srcset="
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-64w.webp?id=bb1fa39a4cc24f7751e83c927d5c016a  1x,
                         https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19 2x
-                      "
-                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
-                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
-                      alt="Lokesh Kumar" class="h-10 w-10 rounded-full bg-gray-50" />
-                    <div class="text-sm leading-6">
-                      <p class="font-semibold text-gray-900">Written by</p>
-                      <p class="text-gray-600">Lokesh Kumar</p>
+                      " src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
+                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
+                        alt="Lokesh Kumar" class="h-10 w-10 rounded-full bg-gray-50" />
+                      <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">Written by</p>
+                        <p class="text-gray-600">Lokesh Kumar</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
-          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- blog swiper end -->
-
-
-
- <!-- footer start -->
- <footer class="relative bg-black py-5 sm:py-10 select-none text-white">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative">
-    <div
-      class="w-full flex flex-wrap py-8 gap-y-5 md:gap-y-10 text-sm justify-between">
-      <div class="w-full md:w-1/2 lg:w-1/3">
-        <div class="flex flex-col w-full px-3">
-          <div class="font-bold w-36 text-base lg:text-lg pb-4">
-            <img class="size-full" src="./assets/img/wpo11Foter.png" alt>
-          </div>
-          <div>
-            WPO11 attempts to provide best services to users by
-            developing hassle free fantasy gaming apps
-            that leaves both the customers and clients satisfied and
-            happier.
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
           </div>
         </div>
-        <div class="px-3 mt-4">
-          <ul class="flex gap-3 ">
-            <li>
-              <a class="opacity-80  hover:text-theme2 duration-200"
-                href="javascript:;">
-                <svg stroke="currentColor" fill="currentColor"
-                  stroke-width="0" viewBox="0 0 512 512" height="24px"
-                  width="24px" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
-                  </path>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="opacity-80 hover:text-theme2 duration-200"
-                href="javascript:;">
-                <svg stroke="currentColor" fill="currentColor"
-                  stroke-width="0" viewBox="0 0 448 512" height="24px"
-                  width="24px" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                  </path>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="opacity-80 hover:text-theme2 duration-200"
-                href="javascript:;">
-                <svg stroke="currentColor" fill="currentColor"
-                  stroke-width="0" viewBox="0 0 448 512" height="24px"
-                  width="24px" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z">
-                  </path>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="opacity-80 hover:text-theme2 duration-200"
-                href="javascript:;">
-                <svg stroke="currentColor" fill="currentColor"
-                  stroke-width="0" viewBox="0 0 448 512" height="24px"
-                  width="24px" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                  </path>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 lg:w-1/4 pt-4">
-        <div class="flex flex-col w-full px-3">
-          <div class="w-full font-bold text-base lg:text-lg pb-4">USEFUL
-            LINKS</div>
-          <a href="./about.html"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-              fill="currentColor" stroke-width="0"
-              viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-              </path>
-            </svg>
-            <span>About Us</span>
-          </a>
-          <a href="./blog.html"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-              fill="currentColor" stroke-width="0"
-              viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-              </path>
-            </svg>
-            <span>Blog</span>
-          </a>
-          <a href="./terms&Conditions.html"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-              fill="currentColor" stroke-width="0"
-              viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-              </path>
-            </svg>
-            <span>T&C</span>
-          </a>
-          <a href="./privacyPolicy.html"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-              fill="currentColor" stroke-width="0"
-              viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-              </path>
-            </svg>
-            <span>Privacy policy</span>
-          </a>
-          <a href="./refundPolicy.html"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-              fill="currentColor" stroke-width="0"
-              viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-              </path>
-            </svg>
-            <span>Refund policy</span>
-          </a>
-          <a href="./howtoplay.html"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-              fill="currentColor" stroke-width="0"
-              viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-              </path>
-            </svg>
-            <span>How to play</span>
-          </a>
-          <a href="./faq.html"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-              fill="currentColor" stroke-width="0"
-              viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-              </path>
-            </svg>
-            <span>FAQ's</span>
-          </a>
-          <a href="./fairplay.html"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-              fill="currentColor" stroke-width="0"
-              viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-              </path>
-            </svg>
-            <span>FairPlay</span>
-          </a>
-          <a href="./responsible-gaming.html"
-          class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-          <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-            fill="currentColor" stroke-width="0"
-            viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-            </path>
-          </svg>
-          <span>Responsible-Gaming</span>
-          </a>
-          <a href="./legality.html"
-          class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-          <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
-            fill="currentColor" stroke-width="0"
-            viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-            </path>
-          </svg>
-          <span>Legality</span>
-          </a>
-
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 lg:w-1/4 pt-4">
-        <div class="flex flex-col w-full px-3">
-          <div class="w-full font-bold text-base lg:text-lg pb-4">CONTACT
-            INFORMATION</div>
-          <a href="javascript:;"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg class="min-w-6" stroke="currentColor" fill="currentColor" stroke-width="0"
-              viewBox="0 0 384 512" height="24px"
-              width="24px" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
-              </path>
-            </svg>
-            <div>
-              <div>Address</div>
-              <div>Office No. 504, Omgurudev Plaza, 26 Mechanic Nagar, Scheme No. 54, Indore, Indore, Madhya Pradesh, India, 452010 </div>
-            </div>
-          </a>
-          <a href="./contact.html"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg stroke="currentColor" fill="none" stroke-width="2"
-              viewBox="0 0 24 24" stroke-linecap="round"
-              stroke-linejoin="round" height="24px" width="24px"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-              </path>
-            </svg>
-            <div>
-              <div>Need Help?</div>
-              <div>+91-8854916759</div>
-            </div>
-          </a>
-          <a href="javascript:;"
-            class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
-            <svg stroke="currentColor" fill="none" stroke-width="2"
-              viewBox="0 0 24 24" stroke-linecap="round"
-              stroke-linejoin="round" height="24px" width="24px"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
-              <path d="M3 6l9 6l9 -6"></path>
-              <path d="M15 18h6"></path>
-              <path d="M18 15l3 3l-3 3"></path>
-            </svg>
-            <div>
-              <div>Email Us At:</div>
-              <div> wpo11fantasy@gmail.com </div>
-            </div>
-          </a>
-
-        </div>
       </div>
     </div>
-    <div
-      class="w-full flex flex-wrap items-center gap-x-10 gap-y-5 justify-center pt-8 lg:pt-14 lg:mt-8 border-t border-white/20 text-xs lg:text-sm">
-      <div class="w-auto opacity-80">©2019 -2024 Rocky11 Games Private Limited . All Rights Reserved
-        |</div>
+  </section> -->
+  <!-- blog swiper end -->
 
-    </div>
-  </div>
-</footer>
-    <!-- download-btn start -->
-    <div class="flex items-center gap-3 fixed bottom-0 z-[1000] left-1/2 -translate-x-1/2 mb-5">
-      <a href="####" class="inline-block w-32 sm:w-44 md:w-48 lg:w-60 animate-bounce">
-        <img src="./assets/img/download-btn.svg" alt="" class="size-full">
-      </a>
-      
-    </div>
-    <!-- download-btn ends -->
-  </body>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".blogsSwiper", {
-      slidesPerView: "2",
-      spaceBetween: 10,
-      speed: 1000,
-      loop: false,
-      "effect": "slide",
-      breakpoints: {
-        320: { "slidesPerView": 1, "spaceBetween": 30 },
-        480: { "slidesPerView": 1.2, "spaceBetween": 20 },
-        640: { "slidesPerView": 2, "spaceBetween": 30 },
-        1024: { "slidesPerView": 2.6, "spaceBetween": 30 },
-        1350: { "slidesPerView": 3.3, "spaceBetween": 30 }
-      },
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
+
+  <!-- footer start -->
+  <footer class="relative bg-black py-5 sm:py-10 text-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative">
+      <div class="w-full flex flex-wrap py-8 gap-y-5 md:gap-y-10 text-sm justify-between">
+        <div class="w-full md:w-1/2 lg:w-1/3">
+          <div class="flex flex-col w-full px-3">
+            <div class="font-bold w-36 text-base lg:text-lg pb-4">
+              <img class="size-full" src="./assets/img/wpo11Foter.png" alt>
+            </div>
+            <div>
+              WPO11 attempts to provide best services to users by
+              developing hassle free fantasy gaming apps
+              that leaves both the customers and clients satisfied and
+              happier.
+            </div>
+          </div>
+          <div class="px-3 mt-4">
+            <ul class="flex gap-3 ">
+              <li>
+                <a class="opacity-80  hover:text-theme2 duration-200" href="javascript:;">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="24px"
+                    width="24px" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="opacity-80 hover:text-theme2 duration-200" href="javascript:;">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="24px"
+                    width="24px" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="opacity-80 hover:text-theme2 duration-200" href="javascript:;">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="24px"
+                    width="24px" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="opacity-80 hover:text-theme2 duration-200" href="javascript:;">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="24px"
+                    width="24px" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 pt-4">
+          <div class="flex flex-col w-full px-3">
+            <div class="w-full font-bold text-base lg:text-lg pb-4">USEFUL
+              LINKS</div>
+            <a href="./about.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>About Us</span>
+            </a>
+            <a href="./blog.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>Blog</span>
+            </a>
+            <a href="./terms&Conditions.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>T&C</span>
+            </a>
+            <a href="./privacyPolicy.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>Privacy policy</span>
+            </a>
+            <a href="./refundPolicy.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>Refund policy</span>
+            </a>
+            <a href="./howtoplay.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>How to play</span>
+            </a>
+            <a href="./faq.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>FAQ's</span>
+            </a>
+            <a href="./fairplay.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>FairPlay</span>
+            </a>
+            <a href="./responsible-gaming.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>Responsible-Gaming</span>
+            </a>
+            <a href="./legality.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                </path>
+              </svg>
+              <span>Legality</span>
+            </a>
+
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/4 pt-4">
+          <div class="flex flex-col w-full px-3">
+            <div class="w-full font-bold text-base lg:text-lg pb-4">CONTACT
+              INFORMATION</div>
+            <a href="javascript:;"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg class="min-w-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512"
+                height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
+                </path>
+              </svg>
+              <div>
+                <div>Address</div>
+                <div>Office No. 504, Omgurudev Plaza, 26 Mechanic Nagar, Scheme No. 54, Indore, Indore, Madhya Pradesh,
+                  India, 452010 </div>
+              </div>
+            </a>
+            <a href="./contact.html"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <div>
+                <div>Need Help?</div>
+                <div>+91-8854916759</div>
+              </div>
+            </a>
+            <a href="javascript:;"
+              class="w-full opacity-80 hover:text-theme2 duration-200 py-2 md:py-1 hoverLink flex items-center gap-2 text-sm">
+              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
+                <path d="M3 6l9 6l9 -6"></path>
+                <path d="M15 18h6"></path>
+                <path d="M18 15l3 3l-3 3"></path>
+              </svg>
+              <div>
+                <div>Email Us At:</div>
+                <div> wpo11fantasy@gmail.com </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full flex flex-wrap items-center gap-x-10 gap-y-5 justify-center pt-8 lg:pt-14 lg:mt-8 border-t border-white/20 text-xs lg:text-sm">
+        <div class="w-auto opacity-80">©2019 -2024 Rocky11 Games Private Limited . All Rights Reserved
+          |</div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- download-btn start -->
+  <!-- <div class="flex items-center gap-3 fixed bottom-0 z-[1000] left-1/2 -translate-x-1/2 mb-5">
+    <a href="####" class="inline-block w-32 sm:w-44 md:w-48 lg:w-60 animate-bounce">
+      <img src="./assets/img/download-btn.svg" alt="" class="size-full">
+    </a>
+
+  </div> -->
+  <!-- download-btn ends -->
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".blogsSwiper", {
+    slidesPerView: "2",
+    spaceBetween: 10,
+    speed: 1000,
+    loop: false,
+    "effect": "slide",
+    breakpoints: {
+      320: { "slidesPerView": 1, "spaceBetween": 30 },
+      480: { "slidesPerView": 1.2, "spaceBetween": 20 },
+      640: { "slidesPerView": 2, "spaceBetween": 30 },
+      1024: { "slidesPerView": 2.6, "spaceBetween": 30 },
+      1350: { "slidesPerView": 3.3, "spaceBetween": 30 }
+    },
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
 
 </html>
