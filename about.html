@@ -39,11 +39,11 @@
 
 <body>
   <!-- header start -->
-  <section class="fixed w-full top-0 z-[999]">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 bg-black z-[999] p-2 py-4 sm:py-7">
+  <section class="fixed w-full top-0 z-[9999] md:px-8">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 bg-theme2 z-[999] p-2 py-3 sm:py-5 rounded-b-xl">
       <div class="flex items-center justify-between">
         <div class="flex z-20">
-          <a href="./index.html" class="logo max-h-5 sm:max-h-8 inline-block w-auto">
+          <a href="./index.html" class="logo max-h-4 sm:max-h-6 inline-block w-auto">
             <img class="h-full" src="./assets/img/logo_wpo.png" alt="Logo" />
           </a>
         </div>
@@ -53,13 +53,13 @@
           <!-- <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
             href="./blog.html">Blog</a> -->
           <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
-            href="####">Download App</a>
+            href="https://wpo11.com/apk/Wpo11.apk">Download App</a>
           <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
             href="howtoplay.html">How to play</a>
           <a class="text-white text-nowrap font-oswald text-lg font-semibold relative after:absolute after:bg-theme2 after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:transform after:scale-x-0 after:transition-transform after:duration-300 after:ease-in-out after:origin-right hover:after:transform hover:after:scale-x-100 hover:after:origin-left"
             href="./contactus.html">Contact us</a>
         </div>
-        <div class="flex items-center md:hidden text-white">
+        <div class=" items-center hidden text-white">
           <button onclick="toggleSidebar()" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true"
               height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
@@ -68,6 +68,70 @@
                 clip-rule="evenodd"></path>
             </svg>
           </button>
+        </div>
+        <div class="relative group/menu block md:hidden">
+          <button class="h-[30px] sm:h-[35px] w-[35px] sm:w-[45px]">
+            <img class="size-full" src="./assets/img/menuBtn.png" alt>
+          </button>
+          <div
+            class="invisible opacity-0 group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300 absolute top-12 w-[250px] right-0 text-white border border-[#B15656] rounded-lg bg-[linear-gradient(90deg,_#431010_1.41%,_#230505e0_100%);]">
+            <div class="group px-5 py-4 border-b border-[#B15656] flex items-center justify-between gap-2">
+              <a href="./about.html">
+                About Us
+              </a>
+              <div
+                class="size-5 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                <svg class="size-full text-[#B15656]" stroke="currentColor" fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="group px-5 py-4 border-b border-[#B15656] flex items-center justify-between gap-2">
+              <a href="https://wpo11.com/apk/Wpo11.apk">
+                Download App
+              </a>
+              <div
+                class="size-5 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                <svg class="size-full text-[#B15656]" stroke="currentColor" fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="group px-5 py-4 border-b border-[#B15656] flex items-center justify-between gap-2">
+              <a href="./howtoplay.html">
+                How To Play
+              </a>
+              <div
+                class="size-5 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                <svg class="size-full text-[#B15656]" stroke="currentColor" fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="group px-5 py-4 flex items-center justify-between gap-2">
+              <a href="./contactus.html">
+                Contact Us
+              </a>
+              <div
+                class="size-5 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
+                <svg class="size-full text-[#B15656]" stroke="currentColor" fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -246,10 +310,8 @@
               <img class="size-full" src="./assets/img/logo_wpo.png" alt>
             </div>
             <div>
-              WPO11 attempts to provide best services to users by
-              developing hassle free fantasy gaming apps
-              that leaves both the customers and clients satisfied and
-              happier.
+              WPO11 strives to deliver top-notch services by creating seamless fantasy gaming apps designed to ensure
+              satisfaction and happiness for both clients and users.
             </div>
           </div>
           <div class="px-3 mt-4">
@@ -455,12 +517,15 @@
     </div>
   </footer>
   <!-- download-btn start -->
-  <!-- <div class="flex items-center gap-3 fixed bottom-0 z-[1000] left-1/2 -translate-x-1/2 mb-5">
-    <a href="####" class="inline-block w-32 sm:w-44 md:w-48 lg:w-60 animate-bounce">
+  <div class="flex items-center gap-3 fixed bottom-0 z-[1000] left-1/2 -translate-x-1/2 mb-5">
+    <a href="https://wpo11.com/apk/Wpo11.apk" class="inline-block w-32 shadow-lg sm:w-44 animate-bounce">
       <img src="./assets/img/download-btn.svg" alt="" class="size-full">
     </a>
-
-  </div> -->
+    <a href="https://apps.apple.com/in/app/wpo11/id6670755062"
+      class="inline-block w-32 shadow-lg sm:w-44 animate-bounce">
+      <img src="./assets/img/download-ios.svg" alt="" class="size-full">
+    </a>
+  </div>
   <!-- download-btn ends -->
 </body>
 
