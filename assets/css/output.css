@@ -1211,8 +1211,16 @@ video {
   height: 100%;
 }
 
+.h-\[10px\]{
+  height: 10px;
+}
+
 .max-h-4{
   max-height: 1rem;
+}
+
+.max-h-5{
+  max-height: 1.25rem;
 }
 
 .\!w-auto{
@@ -1321,6 +1329,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[10px\]{
+  width: 10px;
 }
 
 .min-w-36{
@@ -2885,6 +2897,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -4078,10 +4094,98 @@ video {
   inset: 0px;
 }
 
+.before\:-inset-\[5px\]::before{
+  content: var(--tw-content);
+  inset: -5px;
+}
+
+.before\:bottom-0::before{
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.before\:left-\[calc\(50\%-1px\)\]::before{
+  content: var(--tw-content);
+  left: calc(50% - 1px);
+}
+
+.before\:right-0::before{
+  content: var(--tw-content);
+  right: 0px;
+}
+
+.before\:top-\[calc\(50\%-1px\)\]::before{
+  content: var(--tw-content);
+  top: calc(50% - 1px);
+}
+
+.before\:size-2::before{
+  content: var(--tw-content);
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.before\:size-24::before{
+  content: var(--tw-content);
+  width: 6rem;
+  height: 6rem;
+}
+
+.before\:-translate-x-1\/2::before{
+  content: var(--tw-content);
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:-translate-y-1\/2::before{
+  content: var(--tw-content);
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:translate-x-1\/2::before{
+  content: var(--tw-content);
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:translate-y-1\/2::before{
+  content: var(--tw-content);
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:rounded-full::before{
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
 .before\:rounded-b-2xl::before{
   content: var(--tw-content);
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+}
+
+.before\:border-l-\[10px\]::before{
+  content: var(--tw-content);
+  border-left-width: 10px;
+}
+
+.before\:border-t-\[10px\]::before{
+  content: var(--tw-content);
+  border-top-width: 10px;
+}
+
+.before\:border-black::before{
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.before\:bg-black::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .before\:bg-gradient-to-r::before{
@@ -4526,6 +4630,11 @@ video {
     margin-top: 2.5rem;
   }
 
+  .max-sm\:bg-theme2{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+  }
+
   .max-sm\:object-contain{
     -o-object-fit: contain;
        object-fit: contain;
@@ -4533,6 +4642,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:absolute{
+    position: absolute;
+  }
+
   .sm\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
@@ -4552,6 +4665,10 @@ video {
 
   .sm\:max-h-6{
     max-height: 1.5rem;
+  }
+
+  .sm\:max-h-8{
+    max-height: 2rem;
   }
 
   .sm\:w-1\/2{
@@ -4616,6 +4733,11 @@ video {
   .sm\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:py-7{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
   }
 
   .sm\:pe-4{
@@ -4848,6 +4970,11 @@ video {
 
   .group:hover .md\:group-hover\:shadow-theme2\/40{
     --tw-shadow-color: rgb(255 0 0 / 0.4);
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+
+  .group:hover .md\:group-hover\:shadow-theme2{
+    --tw-shadow-color: #FF0000;
     --tw-shadow: var(--tw-shadow-colored);
   }
 }
