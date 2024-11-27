@@ -167,7 +167,8 @@
       <div
         class="absolute !bottom-4 md:!bottom-28  swiper-pagination z-40 !w-auto mt- !left-1/2 skew-x-12  [&_.swiper-pagination-bullet]:h-1.5 [&_.swiper-pagination-bullet]:skew-y-2 [&_.swiper-pagination-bullet]:w-3 [&_.swiper-pagination-bullet]:md:w-6 [&_.swiper-pagination-bullet-active]:!w-6 [&_.swiper-pagination-bullet-active]:md:!w-10 [&_.swiper-pagination-bullet]:rounded-none [&_.swiper-pagination-bullet-active]:!bg-white [&_.swiper-pagination-bullet]:bg-white/50 [&_.swiper-pagination-bullet]:opacity-100  swiper-pagination-bullets swiper-pagination-horizontal ">
         <span class="swiper-pagination-bullet"></span><span
-          class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span></div>
+          class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span>
+      </div>
       <div
         class=" absolute z-50 bottom-0 left-1/2 py-4 -translate-x-1/2 max-md:hidden w-[90%]  lg:w-[70%] xl:w-[60%] px-12 ">
 
@@ -945,9 +946,9 @@
   </footer>
   <!-- download-btn start -->
   <div class="flex items-center gap-3 fixed bottom-0 z-[1000] left-1/2 -translate-x-1/2 mb-5">
-    <a href="https://wpo11.com/apk/Wpo11.apk" class="inline-block w-32 shadow-lg sm:w-44 animate-bounce">
+    <!-- <a href="https://wpo11.com/apk/Wpo11.apk" class="inline-block w-32 shadow-lg sm:w-44 animate-bounce">
       <img src="./assets/img/download-btn.svg" alt="" class="size-full">
-    </a>
+    </a>  -->
     <a href="https://apps.apple.com/in/app/wpo11/id6670755062"
       class="inline-block w-32 shadow-lg sm:w-44 animate-bounce">
       <img src="./assets/img/download-ios.svg" alt="" class="size-full">
@@ -962,9 +963,9 @@
 
     function handleScroll() {
       if (window.innerWidth <= 639) {
-        if (window.scrollY > 50) { 
+        if (window.scrollY > 50) {
           header.classList.remove('bg-transparent');
-          header.classList.add('bg-theme2', 'shadow-md'); 
+          header.classList.add('bg-theme2', 'shadow-md');
         } else {
           header.classList.remove('bg-theme2', 'shadow-md');
           header.classList.add('bg-transparent');
